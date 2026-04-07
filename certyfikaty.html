@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artur Gilowski - Galeria Certyfikatów">
+    <title>Artur Gilowski - Certyfikaty</title>
+    <link rel="icon" type="image/jpeg" href="profile.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Nawigacja (Zawsze widoczna z pełnym tłem na podstronie) -->
+    <nav class="navbar scrolled" id="navbar" style="padding: 1rem 0; background: var(--bg-surface); border-bottom: 1px solid var(--border-color);">
+        <div class="nav-container">
+            <div></div> 
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <!-- Zmienione ścieżki do plików, by prowadziły do głównej strony z odpowiednim hashem -->
+                <li><a href="index.html" class="nav-link">Wróć do Główniej</a></li>
+                <li><a href="index.html#technologie" class="nav-link">IT & AI</a></li>
+                <li><a href="index.html#inwestycje" class="nav-link">Inwestycje</a></li>
+                <li><a href="index.html#fotografia" class="nav-link">Fotografia</a></li>
+                <li><a href="index.html#sport" class="nav-link">Sport</a></li>
+                <li><a href="index.html#smm" class="nav-link">SMM & OFM</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="certyfikaty.html" class="nav-link" style="color:var(--text-primary); font-weight:600;">Certyfikaty</a></li>
+                <li><a href="index.html#cennik" class="nav-link">Cennik</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Nagłówek Podstrony Certyfikatów -->
+    <header class="subpage-header animate-on-scroll">
+        <div class="section-container text-center">
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);">Moje Certyfikaty</h1>
+            <p class="section-text" style="max-width: 600px; margin: 0 auto;">Zbiór dyplomów, autoryzacji oraz ukończonych kursów potwierdzających profesjonalne przygotowanie i wysokie kwalifikacje w poszczególnych dziedzinach mojej pracy.</p>
+        </div>
+    </header>
+
+    <!-- Galeria Certyfikatów -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="section-container">
+            <div class="certificate-gallery">
+                
+                <!-- Certyfikat 1 -->
+                <div class="certificate-card animate-on-scroll">
+                    <!-- Zmień placeholder na img -->
+                    <div class="cert-img-wrapper">
+                        <!-- przykład: <img src="certyfikat1.jpg" alt="Certyfikat AI"> -->
+                        <div class="img-placeholder" style="background: linear-gradient(45deg, #111, #333)">Miejsce na skan 1</div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Certyfikat AI Engineering</h3>
+                        <p>ZAAWANSOWANE MODELE JĘZYKOWE & PROMPTING</p>
+                    </div>
+                </div>
+
+                <!-- Certyfikat 2 -->
+                <div class="certificate-card animate-on-scroll delay-1">
+                    <div class="cert-img-wrapper">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #0f2027, #2c5364)">Miejsce na skan 2</div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Blockchain & Crypto Trading</h3>
+                        <p>KURS STRATEGICZNY BITCOIN (BTC)</p>
+                    </div>
+                </div>
+
+                <!-- Certyfikat 3 -->
+                <div class="certificate-card animate-on-scroll delay-2">
+                    <div class="cert-img-wrapper">
+                        <div class="img-placeholder" style="background: linear-gradient(to right, #434343 0%, black 100%)">Miejsce na skan 3</div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Social Media Management</h3>
+                        <p>SEO OPTYMALIZACJA ORAZ BUDOWA WIZERUNKU</p>
+                    </div>
+                </div>
+                
+                 <!-- Certyfikat 4 -->
+                <div class="certificate-card animate-on-scroll">
+                    <div class="cert-img-wrapper">
+                        <div class="img-placeholder" style="background: linear-gradient(to right, #240b36, #c31432)">Miejsce na skan 4</div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Photography Masterclass</h3>
+                        <p>PROFESJONALNA FOTOGRAFIA PRODUKTOWA</p>
+                    </div>
+                </div>
+                 
+                 <!-- Certyfikat 5 -->
+                <div class="certificate-card animate-on-scroll delay-1">
+                    <div class="cert-img-wrapper">
+                        <div class="img-placeholder" style="background: linear-gradient(to top, #11998e, #38ef7d)">Miejsce na skan 5</div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Inżynieria Oprogramowania</h3>
+                        <p>DYPLOM IT OCHRONY DANYCH I BUDOWY SYSTEMÓW</p>
+                    </div>
+                </div>
+
+                 <!-- Dodaj ile potrzebujesz powielając 'certificate-card' -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka (Identyczna co w index.html) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>AG.</h3>
+                <p>Usługi od A do Z, AI, IT, Fotografia, SMM i Sport.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/artur-gilowski-1b16893b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ArturGilowski" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/GilowskiArtur" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Wróć na górę"><i class="fas fa-chevron-up"></i></a>
+    <script src="script.js"></script>
+</body>
+</html>
