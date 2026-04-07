@@ -20,21 +20,27 @@
     <!-- Nawigacja (Zawsze widoczna z pełnym tłem na podstronie) -->
     <nav class="navbar scrolled" id="navbar" style="padding: 1rem 0; background: var(--bg-surface); border-bottom: 1px solid var(--border-color);">
         <div class="nav-container">
-            <div></div> 
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <!-- Zmienione ścieżki do plików, by prowadziły do głównej strony z odpowiednim hashem -->
-                <li><a href="index.html" class="nav-link">Wróć do Główniej</a></li>
-                <li><a href="index.html#technologie" class="nav-link">IT & AI</a></li>
-                <li><a href="index.html#inwestycje" class="nav-link">Inwestycje</a></li>
-                <li><a href="index.html#fotografia" class="nav-link">Fotografia</a></li>
-                <li><a href="index.html#sport" class="nav-link">Sport</a></li>
-                <li><a href="index.html#smm" class="nav-link">SMM & OFM</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Usługi <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="uslugi-it.html" class="dropdown-item">Technologie IT</a>
+                        <a href="uslugi-ai.html" class="dropdown-item">Rozwiązania AI</a>
+                        <a href="inwestycje.html" class="dropdown-item">Inwestycje Crypto</a>
+                        <a href="fotografia.html" class="dropdown-item">Fotografia</a>
+                        <a href="sport.html" class="dropdown-item">Zajęcia Sportowe</a>
+                        <a href="smm.html" class="dropdown-item">SMM</a>
+                        <a href="ofm.html" class="dropdown-item">OnlyFans Management</a>
+                        <a href="arkusze.html" class="dropdown-item">Specjalistyczne Arkusze Google</a>
+                    </div>
+                </li>
+                <li class="nav-push"><a href="index.html" class="nav-link">Wróć do Głównej</a></li>
                 <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
                 <li><a href="certyfikaty.html" class="nav-link" style="color:var(--text-primary); font-weight:600;">Certyfikaty</a></li>
-                <li><a href="index.html#cennik" class="nav-link">Cennik</a></li>
+                <li><a href="cennik.html" class="nav-link">Cennik</a></li>
             </ul>
         </div>
     </nav>

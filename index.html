@@ -20,20 +20,27 @@
     <!-- Nawigacja -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div></div> 
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#technologie" class="nav-link">IT & AI</a></li>
-                <li><a href="#inwestycje" class="nav-link">Inwestycje</a></li>
-                <li><a href="#fotografia" class="nav-link">Fotografia</a></li>
-                <li><a href="#sport" class="nav-link">Sport</a></li>
-                <li><a href="#smm" class="nav-link">SMM & OFM</a></li>
+                <li class="dropdown nav-push">
+                    <a href="#" class="nav-link">Usługi <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="uslugi-it.html" class="dropdown-item">Technologie IT</a>
+                        <a href="uslugi-ai.html" class="dropdown-item">Rozwiązania AI</a>
+                        <a href="inwestycje.html" class="dropdown-item">Inwestycje Crypto</a>
+                        <a href="fotografia.html" class="dropdown-item">Fotografia</a>
+                        <a href="sport.html" class="dropdown-item">Zajęcia Sportowe</a>
+                        <a href="smm.html" class="dropdown-item">SMM</a>
+                        <a href="ofm.html" class="dropdown-item">OnlyFans Management</a>
+                        <a href="arkusze.html" class="dropdown-item">Specjalistyczne Arkusze Google</a>
+                    </div>
+                </li>
                 <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
                 <li><a href="certyfikaty.html" class="nav-link">Certyfikaty</a></li>
-                <li><a href="#cennik" class="nav-link">Cennik</a></li>
-                <li><a href="#kontakt" class="nav-link nav-btn">Kontakt</a></li>
+                <li><a href="cennik.html" class="nav-link">Cennik</a></li>
+                <li><a href="index.html#kontakt" class="nav-link nav-btn">Kontakt</a></li>
             </ul>
         </div>
     </nav>
@@ -70,9 +77,10 @@
                         <li><i class="fas fa-check"></i> Tworzenie prostych stron i aplikacji</li>
                         <li><i class="fas fa-check"></i> Tworzenie rozwiązań AI dla firm i ludzi prywatnych</li>
                         <li><i class="fas fa-check"></i> Profesjonalne spersonalizowane dashbordy pomagające w zarządzaniu</li>
-                        <li><i class="fas fa-check"></i> Składanie sprzętu komputerowego: specjalistycznego oraz do użytku osobistego</li>
+                        <li><i class="fas fa-check"></i> Składanie sprzętu komputerowego</li>
                         <li><i class="fas fa-check"></i> Pomoc w wyborze sprzętu komputerowego</li>
                     </ul>
+                    <a href="uslugi-it.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);">Zobacz szczegóły</a>
                 </div>
                 <div class="service-card animate-on-scroll delay-1">
                     <div class="service-icon"><i class="fas fa-robot"></i></div>
@@ -82,6 +90,7 @@
                         <li><i class="fas fa-check"></i> Kursy AI dla "zielonych" (początkujących)</li>
                         <li><i class="fas fa-check"></i> Kursy AI dla zaawansowanych</li>
                     </ul>
+                    <a href="uslugi-ai.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);">Zobacz szczegóły</a>
                 </div>
             </div>
         </div>
@@ -100,6 +109,7 @@
                         <li><i class="fab fa-bitcoin shine-icon"></i> Inwestycje w krypto - Bitcoin</li>
                         <li><i class="fas fa-chart-line shine-icon"></i> Kurs inwestycji Crypto od A do Z</li>
                     </ul>
+                    <a href="inwestycje.html" class="btn btn-secondary" style="margin-top: 1.5rem; border: 1px solid var(--border-color);">Zobacz szczegóły</a>
                 </div>
                 <div class="split-visual animate-on-scroll delay-1">
                     <div class="crypto-showcase">
@@ -128,6 +138,9 @@
                             <li><i class="fas fa-box-open"></i> Fotografia produktów (e-commerce)</li>
                             <li><i class="fas fa-search"></i> Fotografia pod optymalizację SEO</li>
                         </ul>
+                        <div style="margin-top: 1.5rem; text-align: center;">
+                            <a href="fotografia.html" class="btn btn-secondary" style="border: 1px solid var(--border-color);">Wyświetl Galerię Ofert</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -146,6 +159,7 @@
                         <li><i class="fas fa-skiing"></i> Zajęcia z narciarstwa dla dzieci i młodzieży</li>
                         <li><i class="fas fa-skating"></i> Zajęcia na łyżwach dla dzieci i młodzieży</li>
                     </ul>
+                    <a href="sport.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);">Szczegóły</a>
                 </div>
                 <div class="service-card animate-on-scroll delay-1">
                     <div class="service-icon"><i class="fas fa-swimmer"></i></div>
@@ -153,6 +167,7 @@
                     <ul class="card-list">
                         <li><i class="fas fa-water"></i> Profesjonalne zajęcia z pływania dla każdego poziomu</li>
                     </ul>
+                    <a href="sport.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);">Szczegóły</a>
                 </div>
             </div>
         </div>
@@ -175,6 +190,7 @@
                         <li><i class="fas fa-check"></i> Strategia wzrostu marki</li>
                         <li><i class="fas fa-check"></i> Algorytmiczne pozycjonowanie</li>
                     </ul>
+                    <a href="smm.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);">Szczegóły pakietu</a>
                 </div>
                 <div class="smm-card smm-card-primary animate-on-scroll delay-1">
                     <div class="smm-icon" style="color:var(--bg-color);"><i class="fas fa-star"></i></div>
@@ -184,6 +200,7 @@
                         <li><i class="fas fa-check" style="color:#000;"></i> Indywidualny format</li>
                         <li><i class="fas fa-check" style="color:#000;"></i> Zasięgi organiczne</li>
                     </ul>
+                    <a href="smm.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid #111; color: #111;">Szczegóły pakietu</a>
                 </div>
                 <div class="smm-card animate-on-scroll delay-2" style="border-image: linear-gradient(135deg, #ff007f, #7928ca) 1;">
                     <div class="smm-icon" style="color:#ff007f;"><i class="fas fa-fire-flame-curved"></i></div>
@@ -193,6 +210,7 @@
                         <li><i class="fas fa-check" style="color:#ff007f;"></i> Skalowanie konta</li>
                         <li><i class="fas fa-check" style="color:#ff007f;"></i> Rezultaty gwarantowane</li>
                     </ul>
+                    <a href="ofm.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid #ff007f; color: #ff007f;">Aplikuj</a>
                 </div>
             </div>
         </div>
@@ -242,7 +260,7 @@
                         <li><i class="fas fa-chevron-right"></i> Analiza algorytmów</li>
                         <li><i class="fas fa-chevron-right"></i> Umowa o poufności (NDA)</li>
                     </ul>
-                    <a href="#kontakt" class="btn btn-secondary w-full">Wybierz</a>
+                    <a href="ofm.html" class="btn btn-secondary w-full">Szczegóły RevShare</a>
                 </div>
             </div>
         </div>

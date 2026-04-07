@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artur Gilowski - Cennik Usług">
+    <title>Artur Gilowski - Cennik</title>
+    <link rel="icon" type="image/jpeg" href="profile.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Nawigacja -->
+    <nav class="navbar scrolled" id="navbar" style="padding: 1rem 0; background: var(--bg-surface); border-bottom: 1px solid var(--border-color);">
+        <div class="nav-container">
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Usługi <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="uslugi-it.html" class="dropdown-item">Technologie IT</a>
+                        <a href="uslugi-ai.html" class="dropdown-item">Rozwiązania AI</a>
+                        <a href="inwestycje.html" class="dropdown-item">Inwestycje Crypto</a>
+                        <a href="fotografia.html" class="dropdown-item">Fotografia</a>
+                        <a href="sport.html" class="dropdown-item">Zajęcia Sportowe</a>
+                        <a href="smm.html" class="dropdown-item">SMM</a>
+                        <a href="ofm.html" class="dropdown-item">OnlyFans Management</a>
+                        <a href="arkusze.html" class="dropdown-item">Specjalistyczne Arkusze Google</a>
+                    </div>
+                </li>
+                <li class="nav-push"><a href="index.html" class="nav-link">Wróć do Głównej</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="certyfikaty.html" class="nav-link">Certyfikaty</a></li>
+                <li><a href="cennik.html" class="nav-link" style="color:var(--text-primary); font-weight:600;">Cennik</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Nagłówek Podstrony Cennika -->
+    <header class="subpage-header animate-on-scroll">
+        <div class="section-container text-center">
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);">Szczegółowy Cennik</h1>
+            <p class="section-text" style="max-width: 600px; margin: 0 auto;">Przejrzyste zasady wyceny oraz koszty orientacyjne za usługi konsultingowe, technologiczne oraz pakiety zarządzania marką (SMM & OFM).</p>
+        </div>
+    </header>
+
+    <!-- Tabela Cennikowa -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="section-container">
+            <div class="pricing-table-container animate-on-scroll">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Rodzaj Usługi</th>
+                            <th>Model rozliczenia</th>
+                            <th>Szczegóły pakietu</th>
+                            <th>Inwestycja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- IT & AI -->
+                        <tr>
+                            <td>Kursy AI / Konsultacje (Początkujący)</td>
+                            <td>Godzinowy</td>
+                            <td>Indywidualne spotkanie 1:1, analiza potrzeb, Q&A.</td>
+                            <td class="price-val">od 150 PLN / h</td>
+                        </tr>
+                        <tr>
+                            <td>Dedykowany Panel CRM z AI</td>
+                            <td>Projektowy</td>
+                            <td>Wycena indywidualna, integracja API (OpenAI/Claude), UX i wdrożenie.</td>
+                            <td class="price-val">Indywidualna</td>
+                        </tr>
+                        <tr>
+                            <td>Zwykła Strona Internetowa (Landing Page)</td>
+                            <td>Projektowy</td>
+                            <td>Design mobilny, kod front-end, formularz kontaktowy.</td>
+                            <td class="price-val">od 1000 PLN</td>
+                        </tr>
+                        <tr>
+                            <td>Specjalistyczne Arkusze Google</td>
+                            <td>Projektowy</td>
+                            <td>Indywidualne zaprogramowanie makr i formuł pomagających w analizie i sprzedaży.</td>
+                            <td class="price-val">Indywidualna</td>
+                        </tr>
+                        <!-- Krypto -->
+                        <tr>
+                            <td>Inwestycje w Crypto / Blockchain</td>
+                            <td>Zryczałtowany</td>
+                            <td>Kurs kompleksowy od A do Z, portfel, bezpieczeństwo.</td>
+                            <td class="price-val">od 500 PLN</td>
+                        </tr>
+                        <!-- Foto -->
+                        <tr>
+                            <td>Fotografia Produktowa (e-commerce)</td>
+                            <td>Za zdjęcie / Pakiet</td>
+                            <td>Postprodukcja, odpowiednie doświetlenie, formatowanie pod SEO.</td>
+                            <td class="price-val">Wycena własna</td>
+                        </tr>
+                        <!-- Sport -->
+                        <tr>
+                            <td>Zajęcia Sportowe (Pływanie / Narty)</td>
+                            <td>Godzinowy</td>
+                            <td>Opieka i instruktaż dla dzieci i młodzieży na stoku lub basenie.</td>
+                            <td class="price-val">od 100 PLN / h</td>
+                        </tr>
+                        <!-- SMM OFM -->
+                        <tr>
+                            <td>Social Media Management (SMM)</td>
+                            <td>Abonament miesięczny</td>
+                            <td>Growth Hacking, budowa zasięgów, SEO profili (X.com, Instagram).</td>
+                            <td class="price-val">Indywidualna</td>
+                        </tr>
+                        <tr>
+                            <td>OnlyFans Management (OFM)</td>
+                            <td>Procentowy udział (RevShare)</td>
+                            <td>Pakiet All-Inclusive: czaty, promocja subskrypcji, zarządzanie PPV.</td>
+                            <td class="price-val">% Otwarty</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center animate-on-scroll delay-1" style="margin-top: 3rem;">
+                <p class="section-text">Podane ceny są kwotami orientacyjnymi. Rzeczywisty koszt uzależniony jest od specyfikacji projektu oraz czasu i terminu wdrożenia.</p>
+                <a href="index.html#kontakt" class="btn btn-primary" style="margin-top: 1rem;">Zapytaj o dokładną wycenę <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>AG.</h3>
+                <p>Usługi od A do Z: AI, IT, Fotografia, SMM i Sport.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/artur-gilowski-1b16893b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ArturGilowski" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/GilowskiArtur" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Wróć na górę"><i class="fas fa-chevron-up"></i></a>
+    <script src="script.js"></script>
+</body>
+</html>

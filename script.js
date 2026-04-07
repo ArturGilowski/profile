@@ -17,6 +17,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Dropdown mobile toggle
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                // Prevent routing if main link is clicked
+                if (e.target.tagName !== 'I' && !e.target.classList.contains('nav-link')) return;
+                e.preventDefault(); 
+                dropdown.classList.toggle('active');
+            }
+        });
+    });
+
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
