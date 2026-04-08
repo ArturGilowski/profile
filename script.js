@@ -136,4 +136,23 @@ document.addEventListener('DOMContentLoaded', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    // 5. Floating Contact Widget
+    const floatingContact = document.createElement('div');
+    floatingContact.className = 'floating-contact animate-on-scroll';
+    floatingContact.innerHTML = `
+        <div class="floating-contact-header" data-i18n="widget_title">Skontaktuj się ze mną</div>
+        <div class="floating-contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/48514126061" target="_blank" rel="noopener noreferrer">+48 514 126 061</a>
+        </div>
+        <div class="floating-contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:artugilowski@gmail.com">artugilowski@gmail.com</a>
+        </div>
+    `;
+    document.body.appendChild(floatingContact);
+    
+    // Add small delay to trigger CSS transition
+    setTimeout(() => floatingContact.classList.add('visible'), 100);
 });

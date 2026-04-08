@@ -17,6 +17,7 @@ const initialTranslations = {
         "nav_pricing": "Cennik",
         "nav_about": "O mnie",
         "nav_contact": "Kontakt",
+        "widget_title": "Współpraca / Kontakt",
         "footer_slogan": "Usługi od A do Z, AI, IT, Fotografia, SMM i Sport.",
 
         "about_title": "Artur Gilowski - O mnie",
@@ -45,6 +46,7 @@ const initialTranslations = {
         "nav_pricing": "Pricing",
         "nav_about": "About Me",
         "nav_contact": "Contact",
+        "widget_title": "Contact Me",
         "footer_slogan": "Services from A to Z, AI, IT, Photography, SMM, and Sports.",
 
         "about_title": "Artur Gilowski - About Me",
