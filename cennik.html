@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
+<!DOCTYPE html><html lang="pl"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Artur Gilowski - Cennik Usług">
@@ -8,8 +6,8 @@
     <link rel="icon" type="image/jpeg" href="profile.jpg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Custom CSS -->
@@ -25,22 +23,29 @@
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="dropdown">
-                    <a href="#" class="nav-link">Usługi <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <a href="#" class="nav-link"><span data-i18n="nav_uslugi">Usługi</span> <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
                     <div class="dropdown-menu">
-                        <a href="uslugi-it.html" class="dropdown-item">Technologie IT</a>
-                        <a href="uslugi-ai.html" class="dropdown-item">Rozwiązania AI</a>
-                        <a href="inwestycje.html" class="dropdown-item">Inwestycje Crypto</a>
-                        <a href="fotografia.html" class="dropdown-item">Fotografia</a>
-                        <a href="sport.html" class="dropdown-item">Zajęcia Sportowe</a>
-                        <a href="smm.html" class="dropdown-item">SMM</a>
-                        <a href="ofm.html" class="dropdown-item">OnlyFans Management</a>
-                        <a href="arkusze.html" class="dropdown-item">Specjalistyczne Arkusze Google</a>
+                        <a href="uslugi-it.html" class="dropdown-item" data-i18n="nav_it">Technologie IT</a>
+                        <a href="uslugi-ai.html" class="dropdown-item" data-i18n="nav_ai">Rozwiązania AI</a>
+                        <a href="inwestycje.html" class="dropdown-item" data-i18n="nav_crypto">Inwestycje Crypto</a>
+                        <a href="fotografia.html" class="dropdown-item" data-i18n="nav_foto">Fotografia</a>
+                        <a href="sport.html" class="dropdown-item" data-i18n="nav_sport">Zajęcia Sportowe</a>
+                        <a href="smm.html" class="dropdown-item" data-i18n="nav_smm">SMM</a>
+                        <a href="ofm.html" class="dropdown-item" data-i18n="nav_ofm">OnlyFans Management</a>
+                        <a href="arkusze.html" class="dropdown-item" data-i18n="nav_sheets">Specjalistyczne Arkusze Google</a>
                     </div>
                 </li>
-                <li class="nav-push"><a href="index.html" class="nav-link">Wróć do Głównej</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="certyfikaty.html" class="nav-link">Certyfikaty</a></li>
-                <li><a href="cennik.html" class="nav-link" style="color:var(--text-primary); font-weight:600;">Cennik</a></li>
+                <li class="nav-push"><a href="index.html" class="nav-link" data-i18n="nav_back">Wróć do Głównej</a></li>
+                <li><a href="portfolio.html" class="nav-link" data-i18n="nav_portfolio">Portfolio</a></li>
+                <li><a href="certyfikaty.html" class="nav-link" data-i18n="nav_certs">Certyfikaty</a></li>
+                <li><a href="cennik.html" class="nav-link" style="color:var(--text-primary); font-weight:600;" data-i18n="nav_pricing">Cennik</a></li>
+                <li><a href="o-mnie.html" class="nav-link" data-i18n="nav_about">O mnie</a></li>
+                <li><a href="index.html#kontakt" class="nav-link nav-btn" data-i18n="nav_contact" style="border-color:var(--text-primary);">Kontakt</a></li>
+                
+                <li class="lang-switcher">
+                    <button class="lang-btn active" onclick="switchLanguage('pl')">PL</button> | 
+                    <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -48,8 +53,8 @@
     <!-- Nagłówek Podstrony Cennika -->
     <header class="subpage-header animate-on-scroll">
         <div class="section-container text-center">
-            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);">Szczegółowy Cennik</h1>
-            <p class="section-text" style="max-width: 600px; margin: 0 auto;">Przejrzyste zasady wyceny oraz koszty orientacyjne za usługi konsultingowe, technologiczne oraz pakiety zarządzania marką (SMM & OFM).</p>
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);" data-i18n="txt_cennik_7">Szczegółowy Cennik</h1>
+            <p class="section-text" style="max-width: 600px; margin: 0 auto;" data-i18n="txt_cennik_8">Przejrzyste zasady wyceny oraz koszty orientacyjne za usługi konsultingowe, technologiczne oraz pakiety zarządzania marką (SMM &amp; OFM).</p>
         </div>
     </header>
 
@@ -60,79 +65,79 @@
                 <table class="pricing-table">
                     <thead>
                         <tr>
-                            <th>Rodzaj Usługi</th>
-                            <th>Model rozliczenia</th>
-                            <th>Szczegóły pakietu</th>
-                            <th>Inwestycja</th>
+                            <th data-i18n="txt_cennik_9">Rodzaj Usługi</th>
+                            <th data-i18n="txt_cennik_10">Model rozliczenia</th>
+                            <th data-i18n="txt_cennik_11">Szczegóły pakietu</th>
+                            <th data-i18n="txt_cennik_12">Inwestycja</th>
                         </tr>
                     </thead>
                     <tbody>
                         <!-- IT & AI -->
                         <tr>
-                            <td>Kursy AI / Konsultacje (Początkujący)</td>
-                            <td>Godzinowy</td>
-                            <td>Indywidualne spotkanie 1:1, analiza potrzeb, Q&A.</td>
-                            <td class="price-val">od 150 PLN / h</td>
+                            <td data-i18n="txt_cennik_13">Kursy AI / Konsultacje (Początkujący)</td>
+                            <td data-i18n="txt_cennik_14">Godzinowy</td>
+                            <td data-i18n="txt_cennik_15">Indywidualne spotkanie 1:1, analiza potrzeb, Q&amp;A.</td>
+                            <td class="price-val" data-i18n="txt_cennik_16">od 150 PLN / h</td>
                         </tr>
                         <tr>
-                            <td>Dedykowany Panel CRM z AI</td>
-                            <td>Projektowy</td>
-                            <td>Wycena indywidualna, integracja API (OpenAI/Claude), UX i wdrożenie.</td>
-                            <td class="price-val">Indywidualna</td>
+                            <td data-i18n="txt_cennik_17">Dedykowany Panel CRM z AI</td>
+                            <td data-i18n="txt_cennik_18">Projektowy</td>
+                            <td data-i18n="txt_cennik_19">Wycena indywidualna, integracja API (OpenAI/Claude), UX i wdrożenie.</td>
+                            <td class="price-val" data-i18n="txt_cennik_20">Indywidualna</td>
                         </tr>
                         <tr>
-                            <td>Zwykła Strona Internetowa (Landing Page)</td>
-                            <td>Projektowy</td>
-                            <td>Design mobilny, kod front-end, formularz kontaktowy.</td>
-                            <td class="price-val">od 1000 PLN</td>
+                            <td data-i18n="txt_cennik_21">Zwykła Strona Internetowa (Landing Page)</td>
+                            <td data-i18n="txt_cennik_22">Projektowy</td>
+                            <td data-i18n="txt_cennik_23">Design mobilny, kod front-end, formularz kontaktowy.</td>
+                            <td class="price-val" data-i18n="txt_cennik_24">od 1000 PLN</td>
                         </tr>
                         <tr>
-                            <td>Specjalistyczne Arkusze Google</td>
-                            <td>Projektowy</td>
-                            <td>Indywidualne zaprogramowanie makr i formuł pomagających w analizie i sprzedaży.</td>
-                            <td class="price-val">Indywidualna</td>
+                            <td data-i18n="txt_cennik_25">Specjalistyczne Arkusze Google</td>
+                            <td data-i18n="txt_cennik_26">Projektowy</td>
+                            <td data-i18n="txt_cennik_27">Indywidualne zaprogramowanie makr i formuł pomagających w analizie i sprzedaży.</td>
+                            <td class="price-val" data-i18n="txt_cennik_28">Indywidualna</td>
                         </tr>
                         <!-- Krypto -->
                         <tr>
-                            <td>Inwestycje w Crypto / Blockchain</td>
-                            <td>Zryczałtowany</td>
-                            <td>Kurs kompleksowy od A do Z, portfel, bezpieczeństwo.</td>
-                            <td class="price-val">od 500 PLN</td>
+                            <td data-i18n="txt_cennik_29">Inwestycje w Crypto / Blockchain</td>
+                            <td data-i18n="txt_cennik_30">Zryczałtowany</td>
+                            <td data-i18n="txt_cennik_31">Kurs kompleksowy od A do Z, portfel, bezpieczeństwo.</td>
+                            <td class="price-val" data-i18n="txt_cennik_32">od 500 PLN</td>
                         </tr>
                         <!-- Foto -->
                         <tr>
-                            <td>Fotografia Produktowa (e-commerce)</td>
-                            <td>Za zdjęcie / Pakiet</td>
-                            <td>Postprodukcja, odpowiednie doświetlenie, formatowanie pod SEO.</td>
-                            <td class="price-val">Wycena własna</td>
+                            <td data-i18n="txt_cennik_33">Fotografia Produktowa (e-commerce)</td>
+                            <td data-i18n="txt_cennik_34">Za zdjęcie / Pakiet</td>
+                            <td data-i18n="txt_cennik_35">Postprodukcja, odpowiednie doświetlenie, formatowanie pod SEO.</td>
+                            <td class="price-val" data-i18n="txt_cennik_36">Wycena własna</td>
                         </tr>
                         <!-- Sport -->
                         <tr>
-                            <td>Zajęcia Sportowe (Pływanie / Narty)</td>
-                            <td>Godzinowy</td>
-                            <td>Opieka i instruktaż dla dzieci i młodzieży na stoku lub basenie.</td>
-                            <td class="price-val">od 100 PLN / h</td>
+                            <td data-i18n="txt_cennik_37">Zajęcia Sportowe (Pływanie / Narty)</td>
+                            <td data-i18n="txt_cennik_38">Godzinowy</td>
+                            <td data-i18n="txt_cennik_39">Opieka i instruktaż dla dzieci i młodzieży na stoku lub basenie.</td>
+                            <td class="price-val" data-i18n="txt_cennik_40">od 100 PLN / h</td>
                         </tr>
                         <!-- SMM OFM -->
                         <tr>
-                            <td>Social Media Management (SMM)</td>
-                            <td>Abonament miesięczny</td>
-                            <td>Growth Hacking, budowa zasięgów, SEO profili (X.com, Instagram).</td>
-                            <td class="price-val">Indywidualna</td>
+                            <td data-i18n="txt_cennik_41">Social Media Management (SMM)</td>
+                            <td data-i18n="txt_cennik_42">Abonament miesięczny</td>
+                            <td data-i18n="txt_cennik_43">Growth Hacking, budowa zasięgów, SEO profili (X.com, Instagram).</td>
+                            <td class="price-val" data-i18n="txt_cennik_44">Indywidualna</td>
                         </tr>
                         <tr>
-                            <td>OnlyFans Management (OFM)</td>
-                            <td>Procentowy udział (RevShare)</td>
-                            <td>Pakiet All-Inclusive: czaty, promocja subskrypcji, zarządzanie PPV.</td>
-                            <td class="price-val">% Otwarty</td>
+                            <td data-i18n="txt_cennik_45">OnlyFans Management (OFM)</td>
+                            <td data-i18n="txt_cennik_46">Procentowy udział (RevShare)</td>
+                            <td data-i18n="txt_cennik_47">Pakiet All-Inclusive: czaty, promocja subskrypcji, zarządzanie PPV.</td>
+                            <td class="price-val" data-i18n="txt_cennik_48">% Otwarty</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="text-center animate-on-scroll delay-1" style="margin-top: 3rem;">
-                <p class="section-text">Podane ceny są kwotami orientacyjnymi. Rzeczywisty koszt uzależniony jest od specyfikacji projektu oraz czasu i terminu wdrożenia.</p>
-                <a href="index.html#kontakt" class="btn btn-primary" style="margin-top: 1rem;">Zapytaj o dokładną wycenę <i class="fas fa-arrow-right"></i></a>
+                <p class="section-text" data-i18n="txt_cennik_49">Podane ceny są kwotami orientacyjnymi. Rzeczywisty koszt uzależniony jest od specyfikacji projektu oraz czasu i terminu wdrożenia.</p>
+                <a href="index.html#kontakt" class="btn btn-primary" style="margin-top: 1rem;" data-i18n="txt_cennik_50">Zapytaj o dokładną wycenę <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -142,7 +147,7 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <h3>AG.</h3>
-                <p>Usługi od A do Z: AI, IT, Fotografia, SMM i Sport.</p>
+                <p data-i18n="footer_slogan">Usługi od A do Z: AI, IT, Fotografia, SMM i Sport.</p>
             </div>
             <div class="footer-social">
                 <a href="https://www.linkedin.com/in/artur-gilowski-1b16893b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -151,11 +156,13 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
+            <p data-i18n="footer_copy">© 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
         </div>
     </footer>
 
     <a href="#" class="back-to-top" aria-label="Wróć na górę"><i class="fas fa-chevron-up"></i></a>
+    <script src="translations.js"></script>
     <script src="script.js"></script>
-</body>
-</html>
+
+
+</body></html>

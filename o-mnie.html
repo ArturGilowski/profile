@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artur Gilowski - O mnie">
+    <title data-i18n="about_title">Artur Gilowski - O mnie</title>
+    <link rel="icon" type="image/jpeg" href="profile.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar scrolled" id="navbar" style="padding: 1rem 0; background: var(--bg-surface); border-bottom: 1px solid var(--border-color);">
+        <div class="nav-container">
+            <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="nav-link"><span data-i18n="nav_uslugi">Usługi</span> <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="uslugi-it.html" class="dropdown-item" data-i18n="nav_it">Technologie IT</a>
+                        <a href="uslugi-ai.html" class="dropdown-item" data-i18n="nav_ai">Rozwiązania AI</a>
+                        <a href="inwestycje.html" class="dropdown-item" data-i18n="nav_crypto">Inwestycje Crypto</a>
+                        <a href="fotografia.html" class="dropdown-item" data-i18n="nav_foto">Fotografia</a>
+                        <a href="sport.html" class="dropdown-item" data-i18n="nav_sport">Zajęcia Sportowe</a>
+                        <a href="smm.html" class="dropdown-item" data-i18n="nav_smm">SMM</a>
+                        <a href="ofm.html" class="dropdown-item" data-i18n="nav_ofm">OnlyFans Management</a>
+                        <a href="arkusze.html" class="dropdown-item" data-i18n="nav_sheets">Specjalistyczne Arkusze</a>
+                    </div>
+                </li>
+                <li class="nav-push"><a href="index.html" class="nav-link" data-i18n="nav_back">Wróć do Głównej</a></li>
+                <li><a href="portfolio.html" class="nav-link" data-i18n="nav_portfolio">Portfolio</a></li>
+                <li><a href="certyfikaty.html" class="nav-link" data-i18n="nav_certs">Certyfikaty</a></li>
+                <li><a href="cennik.html" class="nav-link" data-i18n="nav_pricing">Cennik</a></li>
+                <li><a href="o-mnie.html" class="nav-link" style="color:var(--text-primary); font-weight:600;" data-i18n="nav_about">O mnie</a></li>
+                <li><a href="index.html#kontakt" class="nav-link nav-btn" data-i18n="nav_contact" style="border-color:var(--text-primary);">Kontakt</a></li>
+                
+                <li class="lang-switcher">
+                    <button class="lang-btn active" onclick="switchLanguage('pl')">PL</button> | 
+                    <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="subpage-header animate-on-scroll">
+        <div class="section-container text-center">
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);" data-i18n="about_heading">Kim jestem?</h1>
+            <p class="section-text" style="max-width: 600px; margin: 0 auto;" data-i18n="about_subheading">Poznaj moją historię, misję oraz dewizę, która napędza mnie na co dzień.</p>
+        </div>
+    </header>
+
+    <section class="section" style="padding-top: 2rem; min-height: 50vh;">
+        <div class="section-container animate-on-scroll" style="display:flex; flex-wrap:wrap; gap:4rem; align-items:center;">
+            
+            <div style="flex:1; min-width:300px; display:flex; justify-content:center;">
+                <div style="position:relative; width:100%; max-width:400px; aspect-ratio:3/4; border-radius:16px; overflow:hidden; border:2px solid var(--border-color); box-shadow:0 20px 40px rgba(0,0,0,0.5);">
+                    <img src="profile.jpg" alt="Artur Gilowski" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='https://ui-avatars.com/api/?name=Artur+Gilowski&background=111&color=fff&size=400'">
+                </div>
+            </div>
+
+            <div style="flex:1.5; min-width:320px;">
+                <h2 style="font-size:2.5rem; color:var(--text-primary); margin-bottom:1.5rem;" data-i18n="about_welcome">Moja droga do celu</h2>
+                <div style="color:var(--text-secondary); font-size:1.1rem; line-height:1.8;">
+                    <p style="margin-bottom:1rem;" data-i18n="about_p1">Od lat pasjonuję się inżynierią systemów i szukaniem najbardziej optymalnych rozwiązań na trudne problemy rynkowe. Zaczynałem od prostej ciekawości światem IT, by dziś doradzać na najszczeblu nowinek cyfrowych związanych ze Sztuczną Inteligencją i Blockchainem.</p>
+                    <p style="margin-bottom:1rem;" data-i18n="about_p2">Moim celem nie jest zwykłe kodowanie. Celem jest budowanie spersonalizowanych dźwigni dla Twojego biznesu. Cenię szczerość i skuteczność, co przenoszę wprost w formę swoich unikalnych modeli usług i RevShare'ów pod klucz.</p>
+                    <p data-i18n="about_p3">Gdy nie programuję, ładuję baterie w terenie, ucząc dzieci sportów zimowych i pływania, lub szukając perfekcyjnych kadrów obiektywem mojej matrycy w sesjach lifestylowych.</p>
+                </div>
+                
+                <div style="margin-top: 3rem; display:flex; gap:1rem; flex-wrap:wrap;">
+                    <a href="index.html#kontakt" class="btn btn-primary" data-i18n="about_btn_contact">Porozmawiajmy o współpracy</a>
+                    <a href="portfolio.html" class="btn btn-secondary" data-i18n="about_btn_portfolio">Zobacz moje portfolio</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>AG.</h3>
+                <p data-i18n="footer_slogan">Usługi od A do Z.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/artur-gilowski-1b16893b8/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ArturGilowski" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/GilowskiArtur" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Translation Script Logic -->
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

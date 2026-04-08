@@ -133,6 +133,37 @@ h1, h2, h3, h4 {
     border-color: var(--text-primary);
 }
 
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .lang-switcher {
+        margin-left: 0;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-weight: 600;
+    transition: color var(--transition-fast);
+    padding: 0;
+}
+
+.lang-btn:hover, .lang-btn.active {
+    color: var(--text-primary);
+}
+
 .hamburger {
     display: none;
     font-size: 1.5rem;

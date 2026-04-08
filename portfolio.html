@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
+<!DOCTYPE html><html lang="pl"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Artur Gilowski - Portfolio projektów">
@@ -8,8 +6,8 @@
     <link rel="icon" type="image/jpeg" href="profile.jpg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Custom CSS -->
@@ -25,22 +23,29 @@
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="dropdown">
-                    <a href="#" class="nav-link">Usługi <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <a href="#" class="nav-link"><span data-i18n="nav_uslugi">Usługi</span> <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
                     <div class="dropdown-menu">
-                        <a href="uslugi-it.html" class="dropdown-item">Technologie IT</a>
-                        <a href="uslugi-ai.html" class="dropdown-item">Rozwiązania AI</a>
-                        <a href="inwestycje.html" class="dropdown-item">Inwestycje Crypto</a>
-                        <a href="fotografia.html" class="dropdown-item">Fotografia</a>
-                        <a href="sport.html" class="dropdown-item">Zajęcia Sportowe</a>
-                        <a href="smm.html" class="dropdown-item">SMM</a>
-                        <a href="ofm.html" class="dropdown-item">OnlyFans Management</a>
-                        <a href="arkusze.html" class="dropdown-item">Specjalistyczne Arkusze Google</a>
+                        <a href="uslugi-it.html" class="dropdown-item" data-i18n="nav_it">Technologie IT</a>
+                        <a href="uslugi-ai.html" class="dropdown-item" data-i18n="nav_ai">Rozwiązania AI</a>
+                        <a href="inwestycje.html" class="dropdown-item" data-i18n="nav_crypto">Inwestycje Crypto</a>
+                        <a href="fotografia.html" class="dropdown-item" data-i18n="nav_foto">Fotografia</a>
+                        <a href="sport.html" class="dropdown-item" data-i18n="nav_sport">Zajęcia Sportowe</a>
+                        <a href="smm.html" class="dropdown-item" data-i18n="nav_smm">SMM</a>
+                        <a href="ofm.html" class="dropdown-item" data-i18n="nav_ofm">OnlyFans Management</a>
+                        <a href="arkusze.html" class="dropdown-item" data-i18n="nav_sheets">Specjalistyczne Arkusze Google</a>
                     </div>
                 </li>
-                <li class="nav-push"><a href="index.html" class="nav-link">Wróć do Głównej</a></li>
-                <li><a href="portfolio.html" class="nav-link" style="color:var(--text-primary); font-weight:600;">Portfolio</a></li>
-                <li><a href="certyfikaty.html" class="nav-link">Certyfikaty</a></li>
-                <li><a href="cennik.html" class="nav-link">Cennik</a></li>
+                <li class="nav-push"><a href="index.html" class="nav-link" data-i18n="nav_back">Wróć do Głównej</a></li>
+                <li><a href="portfolio.html" class="nav-link" style="color:var(--text-primary); font-weight:600;" data-i18n="nav_portfolio">Portfolio</a></li>
+                <li><a href="certyfikaty.html" class="nav-link" data-i18n="nav_certs">Certyfikaty</a></li>
+                <li><a href="cennik.html" class="nav-link" data-i18n="nav_pricing">Cennik</a></li>
+                <li><a href="o-mnie.html" class="nav-link" data-i18n="nav_about">O mnie</a></li>
+                <li><a href="index.html#kontakt" class="nav-link nav-btn" data-i18n="nav_contact" style="border-color:var(--text-primary);">Kontakt</a></li>
+                
+                <li class="lang-switcher">
+                    <button class="lang-btn active" onclick="switchLanguage('pl')">PL</button> | 
+                    <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -48,8 +53,8 @@
     <!-- Nagłówek Podstrony -->
     <header class="subpage-header animate-on-scroll">
         <div class="section-container text-center">
-            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);">Moje Portfolio</h1>
-            <p class="section-text" style="max-width: 600px; margin: 0 auto;">Zestawienie moich wdrożonych projektów, aplikacji webowych, wykonanych dashboardów oraz realizacji dla klientów indywidualnych i B2B.</p>
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);" data-i18n="txt_portfolio_169">Moje Portfolio</h1>
+            <p class="section-text" style="max-width: 600px; margin: 0 auto;" data-i18n="txt_portfolio_170">Zestawienie moich wdrożonych projektów, aplikacji webowych, wykonanych dashboardów oraz realizacji dla klientów indywidualnych i B2B.</p>
         </div>
     </header>
 
@@ -62,16 +67,16 @@
                 <div class="portfolio-card animate-on-scroll">
                     <div class="portfolio-img-wrapper">
                         <!-- Podmień img-placeholder na swój obrazek, np: <img src="projekt1.jpg" alt="Aplikacja Webowa"> -->
-                        <div class="img-placeholder" style="background: linear-gradient(45deg, #2b5876, #4e4376)">Projekt IT / AI</div>
+                        <div class="img-placeholder" style="background: linear-gradient(45deg, #2b5876, #4e4376)" data-i18n="txt_portfolio_171">Projekt IT / AI</div>
                     </div>
                     <div class="portfolio-info">
-                        <h3>Dedykowany Panel CRM z AI</h3>
-                        <p class="portfolio-desc">
+                        <h3 data-i18n="txt_portfolio_172">Dedykowany Panel CRM z AI</h3>
+                        <p class="portfolio-desc" data-i18n="txt_portfolio_173">
                             Zaawansowany system do obsługi klientów dla dużej firmy logistycznej, zintegrowany z modelem GPT w 
                             celu zautomatyzowania odpisywania na codzienne maile. Redukcja czasu obsługi o 60%.
                         </p>
                         <div class="portfolio-tags">
-                            <span>React</span> <span>Node.js</span> <span>OpenAI API</span>
+                            <span data-i18n="txt_portfolio_174">React</span> <span data-i18n="txt_portfolio_175">Node.js</span> <span data-i18n="txt_portfolio_176">OpenAI API</span>
                         </div>
                     </div>
                 </div>
@@ -79,16 +84,16 @@
                 <!-- Projekt 2 -->
                 <div class="portfolio-card animate-on-scroll delay-1">
                     <div class="portfolio-img-wrapper">
-                        <div class="img-placeholder" style="background: linear-gradient(135deg, #1f1c2c, #928dab)">Projekt Fotografia</div>
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #1f1c2c, #928dab)" data-i18n="txt_portfolio_177">Projekt Fotografia</div>
                     </div>
                     <div class="portfolio-info">
-                        <h3>Sesja Produktowa E-commerce</h3>
-                        <p class="portfolio-desc">
+                        <h3 data-i18n="txt_portfolio_178">Sesja Produktowa E-commerce</h3>
+                        <p class="portfolio-desc" data-i18n="txt_portfolio_179">
                             Profesjonalna fotografia i postprodukcja dla marki z branży kosmetycznej. Realizacja pomogła w
                             zwiększeniu konwersji ze sprzedaży internetowej oraz nadała całości statusu marki Premium.
                         </p>
                         <div class="portfolio-tags">
-                            <span>Fotografia SEO</span> <span>Retusz</span>
+                            <span data-i18n="txt_portfolio_180">Fotografia SEO</span> <span data-i18n="txt_portfolio_181">Retusz</span>
                         </div>
                     </div>
                 </div>
@@ -96,16 +101,16 @@
                 <!-- Projekt 3 -->
                 <div class="portfolio-card animate-on-scroll delay-2">
                     <div class="portfolio-img-wrapper">
-                        <div class="img-placeholder" style="background: linear-gradient(to right, #141e30, #243b55)">Projekt SMM</div>
+                        <div class="img-placeholder" style="background: linear-gradient(to right, #141e30, #243b55)" data-i18n="txt_portfolio_182">Projekt SMM</div>
                     </div>
                     <div class="portfolio-info">
-                        <h3>Kampania Wzrostu Wizerunku (SMM)</h3>
-                        <p class="portfolio-desc">
+                        <h3 data-i18n="txt_portfolio_183">Kampania Wzrostu Wizerunku (SMM)</h3>
+                        <p class="portfolio-desc" data-i18n="txt_portfolio_184">
                             Przeprowadzenie kompletnego resetu komunikacji dla eksperta z branży Real Estate na rynkach
                             zagranicznych. Wybudowanie zasięgów organicznych powiększających publiczność o 10 tysięcy śledzących.
                         </p>
                         <div class="portfolio-tags">
-                            <span>Growth Hacking</span> <span>SMM</span>
+                            <span data-i18n="txt_portfolio_185">Growth Hacking</span> <span data-i18n="txt_portfolio_186">SMM</span>
                         </div>
                     </div>
                 </div>
@@ -113,16 +118,16 @@
                  <!-- Projekt 4 -->
                 <div class="portfolio-card animate-on-scroll">
                     <div class="portfolio-img-wrapper">
-                        <div class="img-placeholder" style="background: linear-gradient(to right, #4b6cb7, #182848)">Strona Internetowa</div>
+                        <div class="img-placeholder" style="background: linear-gradient(to right, #4b6cb7, #182848)" data-i18n="txt_portfolio_187">Strona Internetowa</div>
                     </div>
                     <div class="portfolio-info">
-                        <h3>Nowoczesna Strona dla Startup'u</h3>
-                        <p class="portfolio-desc">
+                        <h3 data-i18n="txt_portfolio_188">Nowoczesna Strona dla Startup'u</h3>
+                        <p class="portfolio-desc" data-i18n="txt_portfolio_189">
                             Zaprojektowanie od zera dynamicznego, w pełni responsywnego Landing Page ze strefą ciemną (Dark Mode),
                             dostosowanego pod najnowocześniejsze standardy, animacje oraz UX/UI dla szybkiego i czytelnego przekazu dla klienta.
                         </p>
                         <div class="portfolio-tags">
-                            <span>HTML5/CSS3</span> <span>Javascript</span> <span>UI/UX</span>
+                            <span data-i18n="txt_portfolio_190">HTML5/CSS3</span> <span data-i18n="txt_portfolio_191">Javascript</span> <span data-i18n="txt_portfolio_192">UI/UX</span>
                         </div>
                     </div>
                 </div>
@@ -136,7 +141,7 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <h3>AG.</h3>
-                <p>Usługi od A do Z, AI, IT, Fotografia, SMM i Sport.</p>
+                <p data-i18n="footer_slogan">Usługi od A do Z, AI, IT, Fotografia, SMM i Sport.</p>
             </div>
             <div class="footer-social">
                 <a href="https://www.linkedin.com/in/artur-gilowski-1b16893b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -145,11 +150,13 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
+            <p data-i18n="footer_copy">© 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
         </div>
     </footer>
 
     <a href="#" class="back-to-top" aria-label="Wróć na górę"><i class="fas fa-chevron-up"></i></a>
+    <script src="translations.js"></script>
     <script src="script.js"></script>
-</body>
-</html>
+
+
+</body></html>

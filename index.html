@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
+<!DOCTYPE html><html lang="pl"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Artur Gilowski - Usługi informatyczne, AI, Inwestycje, Fotografia, Sport, SMM">
@@ -8,8 +6,8 @@
     <link rel="icon" type="image/jpeg" href="profile.jpg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Custom CSS -->
@@ -25,22 +23,28 @@
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="dropdown nav-push">
-                    <a href="#" class="nav-link">Usługi <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <a href="#" class="nav-link"><span data-i18n="nav_uslugi">Usługi</span> <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
                     <div class="dropdown-menu">
-                        <a href="uslugi-it.html" class="dropdown-item">Technologie IT</a>
-                        <a href="uslugi-ai.html" class="dropdown-item">Rozwiązania AI</a>
-                        <a href="inwestycje.html" class="dropdown-item">Inwestycje Crypto</a>
-                        <a href="fotografia.html" class="dropdown-item">Fotografia</a>
-                        <a href="sport.html" class="dropdown-item">Zajęcia Sportowe</a>
-                        <a href="smm.html" class="dropdown-item">SMM</a>
-                        <a href="ofm.html" class="dropdown-item">OnlyFans Management</a>
-                        <a href="arkusze.html" class="dropdown-item">Specjalistyczne Arkusze Google</a>
+                        <a href="uslugi-it.html" class="dropdown-item" data-i18n="nav_it">Technologie IT</a>
+                        <a href="uslugi-ai.html" class="dropdown-item" data-i18n="nav_ai">Rozwiązania AI</a>
+                        <a href="inwestycje.html" class="dropdown-item" data-i18n="nav_crypto">Inwestycje Crypto</a>
+                        <a href="fotografia.html" class="dropdown-item" data-i18n="nav_foto">Fotografia</a>
+                        <a href="sport.html" class="dropdown-item" data-i18n="nav_sport">Zajęcia Sportowe</a>
+                        <a href="smm.html" class="dropdown-item" data-i18n="nav_smm">SMM</a>
+                        <a href="ofm.html" class="dropdown-item" data-i18n="nav_ofm">OnlyFans Management</a>
+                        <a href="arkusze.html" class="dropdown-item" data-i18n="nav_sheets">Specjalistyczne Arkusze Google</a>
                     </div>
                 </li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="certyfikaty.html" class="nav-link">Certyfikaty</a></li>
-                <li><a href="cennik.html" class="nav-link">Cennik</a></li>
-                <li><a href="index.html#kontakt" class="nav-link nav-btn">Kontakt</a></li>
+                <li><a href="portfolio.html" class="nav-link" data-i18n="nav_portfolio">Portfolio</a></li>
+                <li><a href="certyfikaty.html" class="nav-link" data-i18n="nav_certs">Certyfikaty</a></li>
+                <li><a href="cennik.html" class="nav-link" data-i18n="nav_pricing">Cennik</a></li>
+                <li><a href="o-mnie.html" class="nav-link" data-i18n="nav_about">O mnie</a></li>
+                <li><a href="index.html#kontakt" class="nav-link nav-btn" data-i18n="nav_contact" style="border-color:var(--text-primary);">Kontakt</a></li>
+                
+                <li class="lang-switcher">
+                    <button class="lang-btn active" onclick="switchLanguage('pl')">PL</button> | 
+                    <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -49,15 +53,15 @@
     <header class="hero" id="home">
         <div class="hero-content animate-on-scroll">
             <div class="profile-img-container">
-                <img src="profile.jpg" alt="Artur Gilowski" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Artur+Gilowski&background=111&color=fff&size=150'">
+                <img src="profile.jpg" alt="Artur Gilowski" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Artur+Gilowski&amp;background=111&amp;color=fff&amp;size=150'">
                 <div class="glow-ring"></div>
             </div>
-            <h1 class="hero-title">Artur Gilowski</h1>
-            <p class="hero-subtitle">Profesjonalne doradztwo projektowe, inżynieria IT, AI i nowe technologie. <br />Oferuję kompleksowe rozwiązania w wielu dziedzinach.</p>
+            <h1 class="hero-title" data-i18n="txt_index_76">Artur Gilowski</h1>
+            <p class="hero-subtitle" data-i18n="txt_index_77">Profesjonalne doradztwo projektowe, inżynieria IT, AI i nowe technologie. <br>Oferuję kompleksowe rozwiązania w wielu dziedzinach.</p>
             <div class="hero-actions">
-                <a href="#kontakt" class="btn btn-primary">Współpraca <i class="fas fa-arrow-right"></i></a>
-                <a href="portfolio.html" class="btn btn-secondary">Portfolio</a>
-                <a href="#technologie" class="btn btn-secondary">Zobacz usługi</a>
+                <a href="#kontakt" class="btn btn-primary" data-i18n="txt_index_78">Współpraca <i class="fas fa-arrow-right"></i></a>
+                <a href="portfolio.html" class="btn btn-secondary" data-i18n="txt_index_79">Portfolio</a>
+                <a href="#technologie" class="btn btn-secondary" data-i18n="txt_index_80">Zobacz usługi</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -68,29 +72,29 @@
     <!-- Technologie i AI -->
     <section class="section" id="technologie">
         <div class="section-container">
-            <h2 class="section-title animate-on-scroll">Technologie Informatyczne & AI</h2>
+            <h2 class="section-title animate-on-scroll" data-i18n="txt_index_81">Technologie Informatyczne &amp; AI</h2>
             <div class="services-grid">
                 <div class="service-card animate-on-scroll">
                     <div class="service-icon"><i class="fas fa-code"></i></div>
-                    <h3>Technologie Informatyczne</h3>
+                    <h3 data-i18n="txt_index_82">Technologie Informatyczne</h3>
                     <ul class="card-list">
-                        <li><i class="fas fa-check"></i> Tworzenie prostych stron i aplikacji</li>
-                        <li><i class="fas fa-check"></i> Tworzenie rozwiązań AI dla firm i ludzi prywatnych</li>
-                        <li><i class="fas fa-check"></i> Profesjonalne spersonalizowane dashbordy pomagające w zarządzaniu</li>
-                        <li><i class="fas fa-check"></i> Składanie sprzętu komputerowego</li>
-                        <li><i class="fas fa-check"></i> Pomoc w wyborze sprzętu komputerowego</li>
+                        <li data-i18n="txt_index_83"><i class="fas fa-check"></i> Tworzenie prostych stron i aplikacji</li>
+                        <li data-i18n="txt_index_84"><i class="fas fa-check"></i> Tworzenie rozwiązań AI dla firm i ludzi prywatnych</li>
+                        <li data-i18n="txt_index_85"><i class="fas fa-check"></i> Profesjonalne spersonalizowane dashbordy pomagające w zarządzaniu</li>
+                        <li data-i18n="txt_index_86"><i class="fas fa-check"></i> Składanie sprzętu komputerowego</li>
+                        <li data-i18n="txt_index_87"><i class="fas fa-check"></i> Pomoc w wyborze sprzętu komputerowego</li>
                     </ul>
-                    <a href="uslugi-it.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);">Zobacz szczegóły</a>
+                    <a href="uslugi-it.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);" data-i18n="txt_index_88">Zobacz szczegóły</a>
                 </div>
                 <div class="service-card animate-on-scroll delay-1">
                     <div class="service-icon"><i class="fas fa-robot"></i></div>
-                    <h3>Rozwiązania AI</h3>
+                    <h3 data-i18n="txt_index_89">Rozwiązania AI</h3>
                     <ul class="card-list">
-                        <li><i class="fas fa-check"></i> Automatyzacja zadań z wykorzystaniem AI</li>
-                        <li><i class="fas fa-check"></i> Kursy AI dla "zielonych" (początkujących)</li>
-                        <li><i class="fas fa-check"></i> Kursy AI dla zaawansowanych</li>
+                        <li data-i18n="txt_index_90"><i class="fas fa-check"></i> Automatyzacja zadań z wykorzystaniem AI</li>
+                        <li data-i18n="txt_index_91"><i class="fas fa-check"></i> Kursy AI dla "zielonych" (początkujących)</li>
+                        <li data-i18n="txt_index_92"><i class="fas fa-check"></i> Kursy AI dla zaawansowanych</li>
                     </ul>
-                    <a href="uslugi-ai.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);">Zobacz szczegóły</a>
+                    <a href="uslugi-ai.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);" data-i18n="txt_index_93">Zobacz szczegóły</a>
                 </div>
             </div>
         </div>
@@ -101,15 +105,15 @@
         <div class="section-container">
             <div class="split-layout">
                 <div class="split-content animate-on-scroll">
-                    <h2 class="section-title">Inwestycje i Krypto</h2>
-                    <p class="section-text">
+                    <h2 class="section-title" data-i18n="txt_index_94">Inwestycje i Krypto</h2>
+                    <p class="section-text" data-i18n="txt_index_95">
                         Zapewniam edukację i doradztwo w świecie kryptowalut, pomagając odnaleźć się w cyfrowej gospodarce. Wykorzystaj potencjał blockchain i mądrze zacznij inwestować.
                     </p>
                     <ul class="feature-list">
-                        <li><i class="fab fa-bitcoin shine-icon"></i> Inwestycje w krypto - Bitcoin</li>
-                        <li><i class="fas fa-chart-line shine-icon"></i> Kurs inwestycji Crypto od A do Z</li>
+                        <li data-i18n="txt_index_96"><i class="fab fa-bitcoin shine-icon"></i> Inwestycje w krypto - Bitcoin</li>
+                        <li data-i18n="txt_index_97"><i class="fas fa-chart-line shine-icon"></i> Kurs inwestycji Crypto od A do Z</li>
                     </ul>
-                    <a href="inwestycje.html" class="btn btn-secondary" style="margin-top: 1.5rem; border: 1px solid var(--border-color);">Zobacz szczegóły</a>
+                    <a href="inwestycje.html" class="btn btn-secondary" style="margin-top: 1.5rem; border: 1px solid var(--border-color);" data-i18n="txt_index_98">Zobacz szczegóły</a>
                 </div>
                 <div class="split-visual animate-on-scroll delay-1">
                     <div class="crypto-showcase">
@@ -127,19 +131,19 @@
     <!-- Fotografia -->
     <section class="section" id="fotografia">
         <div class="section-container">
-            <h2 class="section-title animate-on-scroll text-center">Fotografia</h2>
+            <h2 class="section-title animate-on-scroll text-center" data-i18n="txt_index_99">Fotografia</h2>
             <div class="services-grid">
                 <div class="service-card animate-on-scroll" style="grid-column: 1 / -1; display:flex; flex-wrap:wrap; gap: 2rem; align-items:center;">
                     <div class="service-icon" style="margin-bottom:0;"><i class="fas fa-camera-retro"></i></div>
                     <div style="flex:1; min-width:300px;">
                         <ul class="card-list" style="margin-top:0; column-count:2; column-gap:2rem;">
-                            <li><i class="fas fa-camera"></i> Fotografia specjalistyczna</li>
-                            <li><i class="fas fa-user-astronaut"></i> Fotografia osób (portrety i wizerunek)</li>
-                            <li><i class="fas fa-box-open"></i> Fotografia produktów (e-commerce)</li>
-                            <li><i class="fas fa-search"></i> Fotografia pod optymalizację SEO</li>
+                            <li data-i18n="txt_index_100"><i class="fas fa-camera"></i> Fotografia specjalistyczna</li>
+                            <li data-i18n="txt_index_101"><i class="fas fa-user-astronaut"></i> Fotografia osób (portrety i wizerunek)</li>
+                            <li data-i18n="txt_index_102"><i class="fas fa-box-open"></i> Fotografia produktów (e-commerce)</li>
+                            <li data-i18n="txt_index_103"><i class="fas fa-search"></i> Fotografia pod optymalizację SEO</li>
                         </ul>
                         <div style="margin-top: 1.5rem; text-align: center;">
-                            <a href="fotografia.html" class="btn btn-secondary" style="border: 1px solid var(--border-color);">Wyświetl Galerię Ofert</a>
+                            <a href="fotografia.html" class="btn btn-secondary" style="border: 1px solid var(--border-color);" data-i18n="txt_index_104">Wyświetl Galerię Ofert</a>
                         </div>
                     </div>
                 </div>
@@ -150,24 +154,24 @@
     <!-- Sport -->
     <section class="section section-darker" id="sport">
         <div class="section-container">
-            <h2 class="section-title animate-on-scroll text-center">Zajęcia Sportowe</h2>
+            <h2 class="section-title animate-on-scroll text-center" data-i18n="txt_index_105">Zajęcia Sportowe</h2>
             <div class="services-grid">
                 <div class="service-card animate-on-scroll">
                     <div class="service-icon"><i class="fas fa-snowflake"></i></div>
-                    <h3>Zima</h3>
+                    <h3 data-i18n="txt_index_106">Zima</h3>
                     <ul class="card-list">
-                        <li><i class="fas fa-skiing"></i> Zajęcia z narciarstwa dla dzieci i młodzieży</li>
-                        <li><i class="fas fa-skating"></i> Zajęcia na łyżwach dla dzieci i młodzieży</li>
+                        <li data-i18n="txt_index_107"><i class="fas fa-skiing"></i> Zajęcia z narciarstwa dla dzieci i młodzieży</li>
+                        <li data-i18n="txt_index_108"><i class="fas fa-skating"></i> Zajęcia na łyżwach dla dzieci i młodzieży</li>
                     </ul>
-                    <a href="sport.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);">Szczegóły</a>
+                    <a href="sport.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);" data-i18n="txt_index_109">Szczegóły</a>
                 </div>
                 <div class="service-card animate-on-scroll delay-1">
                     <div class="service-icon"><i class="fas fa-swimmer"></i></div>
-                    <h3>Przez cały rok</h3>
+                    <h3 data-i18n="txt_index_110">Przez cały rok</h3>
                     <ul class="card-list">
-                        <li><i class="fas fa-water"></i> Profesjonalne zajęcia z pływania dla każdego poziomu</li>
+                        <li data-i18n="txt_index_111"><i class="fas fa-water"></i> Profesjonalne zajęcia z pływania dla każdego poziomu</li>
                     </ul>
-                    <a href="sport.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);">Szczegóły</a>
+                    <a href="sport.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);" data-i18n="txt_index_112">Szczegóły</a>
                 </div>
             </div>
         </div>
@@ -177,40 +181,40 @@
     <section class="section" id="smm">
         <div class="section-container">
             <div class="text-center animate-on-scroll">
-                <h2 class="section-title" style="margin-bottom: 1rem;">Social Media Management (SMM)</h2>
-                <p class="section-text mb-medium" style="max-width:800px; margin: 0 auto 3rem auto;">Zwiększam Twoją widoczność w internecie opierając się o unikalne taktyki SEO i marketing szeptany.</p>
+                <h2 class="section-title" style="margin-bottom: 1rem;" data-i18n="txt_index_113">Social Media Management (SMM)</h2>
+                <p class="section-text mb-medium" style="max-width:800px; margin: 0 auto 3rem auto;" data-i18n="txt_index_114">Zwiększam Twoją widoczność w internecie opierając się o unikalne taktyki SEO i marketing szeptany.</p>
             </div>
             
             <div class="smm-grid">
                 <div class="smm-card animate-on-scroll">
                     <div class="smm-icon"><i class="fas fa-building"></i></div>
-                    <h3>Profile Firmowe</h3>
+                    <h3 data-i18n="txt_index_115">Profile Firmowe</h3>
                     <div class="smm-desc">SEO dla profili firmowych w social media, by generować maksymalny zasięg.</div>
                     <ul class="card-list">
-                        <li><i class="fas fa-check"></i> Strategia wzrostu marki</li>
-                        <li><i class="fas fa-check"></i> Algorytmiczne pozycjonowanie</li>
+                        <li data-i18n="txt_index_116"><i class="fas fa-check"></i> Strategia wzrostu marki</li>
+                        <li data-i18n="txt_index_117"><i class="fas fa-check"></i> Algorytmiczne pozycjonowanie</li>
                     </ul>
-                    <a href="smm.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);">Szczegóły pakietu</a>
+                    <a href="smm.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid var(--border-color);" data-i18n="txt_index_118">Szczegóły pakietu</a>
                 </div>
                 <div class="smm-card smm-card-primary animate-on-scroll delay-1">
                     <div class="smm-icon" style="color:var(--bg-color);"><i class="fas fa-star"></i></div>
-                    <h3 style="color:var(--bg-color);">Osoby Prywatne</h3>
+                    <h3 style="color:var(--bg-color);" data-i18n="txt_index_119">Osoby Prywatne</h3>
                     <div class="smm-desc" style="color:#222;">Personal branding. Budowa wizerunku od zera i doradztwo w tworzeniu docierających treści.</div>
                     <ul class="card-list" style="color:#222;">
-                        <li><i class="fas fa-check" style="color:#000;"></i> Indywidualny format</li>
-                        <li><i class="fas fa-check" style="color:#000;"></i> Zasięgi organiczne</li>
+                        <li data-i18n="txt_index_120"><i class="fas fa-check" style="color:#000;"></i> Indywidualny format</li>
+                        <li data-i18n="txt_index_121"><i class="fas fa-check" style="color:#000;"></i> Zasięgi organiczne</li>
                     </ul>
-                    <a href="smm.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid #111; color: #111;">Szczegóły pakietu</a>
+                    <a href="smm.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid #111; color: #111;" data-i18n="txt_index_122">Szczegóły pakietu</a>
                 </div>
                 <div class="smm-card animate-on-scroll delay-2" style="border-image: linear-gradient(135deg, #ff007f, #7928ca) 1;">
                     <div class="smm-icon" style="color:#ff007f;"><i class="fas fa-fire-flame-curved"></i></div>
-                    <h3>SMM + OFM</h3>
+                    <h3 data-i18n="txt_index_123">SMM + OFM</h3>
                     <div class="smm-desc">Onlyfans Management z niezwykłą konwersją, dostępny wyłącznie na specjalnych warunkach.</div>
                     <ul class="card-list">
-                        <li><i class="fas fa-check" style="color:#ff007f;"></i> Skalowanie konta</li>
-                        <li><i class="fas fa-check" style="color:#ff007f;"></i> Rezultaty gwarantowane</li>
+                        <li data-i18n="txt_index_124"><i class="fas fa-check" style="color:#ff007f;"></i> Skalowanie konta</li>
+                        <li data-i18n="txt_index_125"><i class="fas fa-check" style="color:#ff007f;"></i> Rezultaty gwarantowane</li>
                     </ul>
-                    <a href="ofm.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid #ff007f; color: #ff007f;">Aplikuj</a>
+                    <a href="ofm.html" class="btn btn-secondary" style="margin-top: 1.5rem; display: block; text-align: center; border: 1px solid #ff007f; color: #ff007f;" data-i18n="txt_index_126">Aplikuj</a>
                 </div>
             </div>
         </div>
@@ -219,48 +223,48 @@
     <!-- Cennik -->
     <section class="section section-darker" id="cennik">
         <div class="section-container">
-            <h2 class="section-title text-center animate-on-scroll">Cennik</h2>
-            <p class="text-center section-text mb-medium animate-on-scroll">Przejrzyste modele rozliczeń. Niestandardowe projekty i plany B2B wyceniane są indywidualnie po kontakcie.</p>
+            <h2 class="section-title text-center animate-on-scroll" data-i18n="txt_index_127">Cennik</h2>
+            <p class="text-center section-text mb-medium animate-on-scroll" data-i18n="txt_index_128">Przejrzyste modele rozliczeń. Niestandardowe projekty i plany B2B wyceniane są indywidualnie po kontakcie.</p>
             
             <div class="pricing-grid">
                 <!-- Karta 1 -->
                 <div class="pricing-card animate-on-scroll">
-                    <h3 class="pricing-name">Konsultacje / Kursy</h3>
+                    <h3 class="pricing-name" data-i18n="txt_index_129">Konsultacje / Kursy</h3>
                     <div class="pricing-price"><span>od</span> 150 <small>PLN</small> <span>/ h</span></div>
-                    <p class="pricing-desc">Kursy AI, szkolenia Krypto i doradztwo doboru sprzętu.</p>
+                    <p class="pricing-desc" data-i18n="txt_index_130">Kursy AI, szkolenia Krypto i doradztwo doboru sprzętu.</p>
                     <ul class="card-list pricing-list">
-                        <li><i class="fas fa-chevron-right"></i> Dedykowany materiał</li>
-                        <li><i class="fas fa-chevron-right"></i> Indywidualne spotkania 1:1</li>
-                        <li><i class="fas fa-chevron-right"></i> Wsparcie online (Q&A)</li>
+                        <li data-i18n="txt_index_131"><i class="fas fa-chevron-right"></i> Dedykowany materiał</li>
+                        <li data-i18n="txt_index_132"><i class="fas fa-chevron-right"></i> Indywidualne spotkania 1:1</li>
+                        <li data-i18n="txt_index_133"><i class="fas fa-chevron-right"></i> Wsparcie online (Q&amp;A)</li>
                     </ul>
-                    <a href="#kontakt" class="btn btn-secondary w-full">Wybierz</a>
+                    <a href="#kontakt" class="btn btn-secondary w-full" data-i18n="txt_index_134">Wybierz</a>
                 </div>
 
                 <!-- Karta 2 (Wyróżniona) -->
                 <div class="pricing-card premium animate-on-scroll delay-1">
                     <div class="pricing-badge">Najpopularniejsze</div>
-                    <h3 class="pricing-name">Rozwiązania IT & AI</h3>
+                    <h3 class="pricing-name" data-i18n="txt_index_135">Rozwiązania IT &amp; AI</h3>
                     <div class="pricing-price">Indywidualna</div>
-                    <p class="pricing-desc">Strony www, dedykowane panele CRM i inteligentne automatyzacje.</p>
+                    <p class="pricing-desc" data-i18n="txt_index_136">Strony www, dedykowane panele CRM i inteligentne automatyzacje.</p>
                     <ul class="card-list pricing-list">
-                        <li><i class="fas fa-chevron-right"></i> Analiza i specyfikacja</li>
-                        <li><i class="fas fa-chevron-right"></i> Wdrożenia AI w 7 dni</li>
-                        <li><i class="fas fa-chevron-right"></i> Maintenance techniczny</li>
+                        <li data-i18n="txt_index_137"><i class="fas fa-chevron-right"></i> Analiza i specyfikacja</li>
+                        <li data-i18n="txt_index_138"><i class="fas fa-chevron-right"></i> Wdrożenia AI w 7 dni</li>
+                        <li data-i18n="txt_index_139"><i class="fas fa-chevron-right"></i> Maintenance techniczny</li>
                     </ul>
-                    <a href="#kontakt" class="btn btn-primary w-full">Zapytaj o wycenę</a>
+                    <a href="#kontakt" class="btn btn-primary w-full" data-i18n="txt_index_140">Zapytaj o wycenę</a>
                 </div>
 
                 <!-- Karta 3 -->
                 <div class="pricing-card animate-on-scroll delay-2">
-                    <h3 class="pricing-name">OnlyFans Mngmt</h3>
+                    <h3 class="pricing-name" data-i18n="txt_index_141">OnlyFans Mngmt</h3>
                     <div class="pricing-price">% <small>RevShare</small></div>
-                    <p class="pricing-desc">Partnerstwo oparte na udziale w przychodach. Zero kosztów stałych.</p>
+                    <p class="pricing-desc" data-i18n="txt_index_142">Partnerstwo oparte na udziale w przychodach. Zero kosztów stałych.</p>
                     <ul class="card-list pricing-list">
-                        <li><i class="fas fa-chevron-right"></i> Gwarancja rezultatów</li>
-                        <li><i class="fas fa-chevron-right"></i> Analiza algorytmów</li>
-                        <li><i class="fas fa-chevron-right"></i> Umowa o poufności (NDA)</li>
+                        <li data-i18n="txt_index_143"><i class="fas fa-chevron-right"></i> Gwarancja rezultatów</li>
+                        <li data-i18n="txt_index_144"><i class="fas fa-chevron-right"></i> Analiza algorytmów</li>
+                        <li data-i18n="txt_index_145"><i class="fas fa-chevron-right"></i> Umowa o poufności (NDA)</li>
                     </ul>
-                    <a href="ofm.html" class="btn btn-secondary w-full">Szczegóły RevShare</a>
+                    <a href="ofm.html" class="btn btn-secondary w-full" data-i18n="txt_index_146">Szczegóły RevShare</a>
                 </div>
             </div>
         </div>
@@ -269,22 +273,22 @@
     <!-- Kontakt -->
     <section class="section" id="kontakt">
         <div class="section-container contact-container animate-on-scroll">
-            <h2 class="section-title text-center">Zapraszam do kontaktu</h2>
-            <p class="text-center section-text mb-medium">Masz pytania dotyczące cennika lub konkretnej usługi? Umówmy się na niezobowiązującą współpracę.</p>
+            <h2 class="section-title text-center" data-i18n="txt_index_147">Zapraszam do kontaktu</h2>
+            <p class="text-center section-text mb-medium" data-i18n="txt_index_148">Masz pytania dotyczące cennika lub konkretnej usługi? Umówmy się na niezobowiązującą współpracę.</p>
             
-            <form id="contact-form" class="contact-form" action="https://formspree.io/f/miejsce_na_twoj_id" method="POST">
+            <form id="contact-form" class="contact-form" action="https://formsubmit.co/artugilowski@gmail.com" method="POST">
                 <div class="form-group">
-                    <label for="name">Imię i nazwisko</label>
-                    <input type="text" id="name" name="name" required placeholder="Jan Kowalski">
+                    <label for="name" data-i18n="txt_index_149">Imię i nazwisko</label>
+                    <input type="text" id="name" name="name" required="" placeholder="Jan Kowalski">
                 </div>
                 <div class="form-group">
-                    <label for="email">Adres email</label>
-                    <input type="email" id="email" name="email" required placeholder="email@domena.pl">
+                    <label for="email" data-i18n="txt_index_150">Adres email</label>
+                    <input type="email" id="email" name="email" required="" placeholder="email@domena.pl">
                 </div>
                 <div class="form-group">
-                    <label for="service_type">Temat rozmowy</label>
-                    <select id="service_type" name="service_type" class="form-select" required>
-                        <option value="" disabled selected>Co Cię interesuje?</option>
+                    <label for="service_type" data-i18n="txt_index_151">Temat rozmowy</label>
+                    <select id="service_type" name="service_type" class="form-select" required="">
+                        <option value="" disabled="" selected="">Co Cię interesuje?</option>
                         <option value="IT_AI">Projekty IT / Kursy AI</option>
                         <option value="Inwestycje">Inwestycje / Krypto</option>
                         <option value="Fotografia">Fotografia</option>
@@ -294,10 +298,10 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="message">Wiadomość</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Napisz więcej o tym, jak mogę Ci pomóc..."></textarea>
+                    <label for="message" data-i18n="txt_index_152">Wiadomość</label>
+                    <textarea id="message" name="message" rows="5" required="" placeholder="Napisz więcej o tym, jak mogę Ci pomóc..."></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary w-full shadow-glow">Wyślij wiadomość</button>
+                <button type="submit" class="btn btn-primary w-full shadow-glow" data-i18n="txt_index_153">Wyślij wiadomość</button>
                 <div id="form-status" class="form-status hidden">Wiadomość została wysłana pomyślnie! Odezwę się wkrótce.</div>
             </form>
         </div>
@@ -308,7 +312,7 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <h3>AG.</h3>
-                <p>Usługi od A do Z: AI, IT, Fotografia, SMM i Sport.</p>
+                <p data-i18n="footer_slogan">Usługi od A do Z: AI, IT, Fotografia, SMM i Sport.</p>
             </div>
             <div class="footer-social">
                 <a href="https://www.linkedin.com/in/artur-gilowski-1b16893b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -317,11 +321,13 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
+            <p data-i18n="footer_copy">© 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
         </div>
     </footer>
 
     <a href="#" class="back-to-top" aria-label="Wróć na górę"><i class="fas fa-chevron-up"></i></a>
+    <script src="translations.js"></script>
     <script src="script.js"></script>
-</body>
-</html>
+
+
+</body></html>
