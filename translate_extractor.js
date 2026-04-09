@@ -1,7 +1,7 @@
 const cheerio = require('cheerio');
 const fs = require('fs');
 
-const files = fs.readdirSync('.').filter(f => f.endsWith('.html'));
+const files = fs.readdirSync('./docs').filter(f => f.endsWith('.html'));
 
 let dictionaryPL = {};
 let counter = 0;
@@ -10,7 +10,7 @@ files.forEach(file => {
     // We skip o-mnie.html because it's already translated
     if (file === 'o-mnie.html') return;
 
-    const html = fs.readFileSync(file, 'utf8');
+    const html = fs.readFileSync('./docs/' + file, 'utf8');
     const $ = cheerio.load(html, { decodeEntities: false }); // keep formatting intact
 
     let modificationsMade = false;
@@ -50,9 +50,9 @@ files.forEach(file => {
     });
 
     if (modificationsMade) {
-        fs.writeFileSync(file, $.html());
+        fs.writeFileSync('./docs/' + file, $.html());
     }
 });
 
-fs.writeFileSync('extracted_pl.json', JSON.stringify(dictionaryPL, null, 2));
+fs.writeFileSync('./docs/extracted_pl.json', JSON.stringify(dictionaryPL, null, 2));
 console.log('Extraction complete! Check extracted_pl.json');

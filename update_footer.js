@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-const glob = fs.readdirSync('.').filter(f => f.endsWith('.html'));
+const glob = fs.readdirSync('./docs').filter(f => f.endsWith('.html'));
 
 glob.forEach(file => {
-    let content = fs.readFileSync(file, 'utf8');
+    let content = fs.readFileSync('./docs/' + file, 'utf8');
     
     // Replace slogan
     content = content.replace(
@@ -39,6 +39,6 @@ glob.forEach(file => {
         '<p data-i18n=\"footer_copy\">© 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>'
     );
 
-    fs.writeFileSync(file, content);
+    fs.writeFileSync('./docs/' + file, content);
 });
 console.log('Updated HTML files footer tags');

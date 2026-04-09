@@ -61,7 +61,7 @@ const initialTranslations = {
     }
 };
 
-const extractedPl = require('./extracted_pl.json');
+const extractedPl = require('./docs/extracted_pl.json');
 const engTranslations = {
 "txt_arkusze_0": "Custom Google Sheets on demand",
 "txt_arkusze_1": "Automate your back-office using only the enhanced Google ecosystem and cloud with integrated JavaScript support.",
@@ -336,5 +336,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 `;
 
-fs.writeFileSync('translations.js', jsOutput);
+fs.writeFileSync('./docs/translations.js', jsOutput);
 console.log('Successfully generated complete translations.js');
