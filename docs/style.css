@@ -1397,68 +1397,79 @@ h1, h2, h3, h4 {
     }
 }
 
-/* Floating Contact Widget */
-.floating-contact {
+/* Contact Bar (Horizontal under header) */
+.contact-bar {
     position: fixed;
-    top: 100px;
-    right: 20px;
-    background: var(--bg-surface);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 1rem;
-    z-index: 999;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    top: 0; /* Positioned dynamically via JS */
+    left: 0;
+    width: 100%;
+    z-index: 998; /* Just below navbar (1000) */
+    background: rgba(10, 10, 10, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.5rem 0;
+    transition: transform 0.4s ease, opacity 0.4s ease, background 0.3s;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.contact-bar.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.contact-bar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.contact-bar-item {
+    display: flex;
+    align-items: center;
     gap: 0.8rem;
-    max-width: 250px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.contact-bar-item i {
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.contact-bar-item a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-bar-item a:hover {
+    color: var(--text-primary);
 }
 
 @media (max-width: 768px) {
-    .floating-contact {
-        top: auto;
-        bottom: 80px;
-        right: 15px;
-        padding: 0.8rem;
-        max-width: 220px;
+    .contact-bar-container {
+        gap: 1.5rem;
+        flex-direction: row;
+        overflow-x: auto;
+        justify-content: flex-start;
+        scrollbar-width: none;
+    }
+    .contact-bar-container::-webkit-scrollbar { display: none; }
+    
+    .contact-bar-item {
+        font-size: 0.75rem;
     }
 }
 
-.floating-contact-header {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 0.5rem;
-    text-align: center;
-}
-
-.floating-contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-}
-
-.floating-contact-item i {
-    color: var(--text-primary);
-    font-size: 1.1rem;
-    width: 1.2rem;
-    text-align: center;
-}
-
-.floating-contact-item a {
-    color: inherit;
-    text-decoration: none;
-    transition: color var(--transition-fast);
-}
-
-.floating-contact-item a:hover {
-    color: var(--text-primary);
-}
 
 /* --- Diving Page Specific Styles --- */
 
@@ -1937,7 +1948,7 @@ h1, h2, h3, h4 {
 
 .cookie-btn {
     background: var(--text-primary);
-    color: var(--bg-primary);
+    color: #000;
     border: none;
     padding: 0.6rem 1.5rem;
     border-radius: 8px;
@@ -1961,5 +1972,61 @@ h1, h2, h3, h4 {
     
     .cookie-btn {
         width: 100%;
+    }
+}
+
+/* ==========================================
+   GLOBAL MOBILE REFINEMENTS
+   ========================================== */
+@media (max-width: 768px) {
+    /* Better Section Spacing */
+    .section, section {
+        padding: 4rem 1.5rem !important;
+    }
+    
+    /* Fluid Headers */
+    .hero-title {
+        font-size: clamp(2.2rem, 10vw, 3rem) !important;
+        margin-bottom: 1.5rem !important;
+        line-height: 1.1 !important;
+    }
+    
+    .section-title {
+        font-size: 1.8rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    /* Grid & Flex Stacking */
+    .service-grid, 
+    .portfolio-grid, 
+    .bento-grid, 
+    .features-grid,
+    .split-layout {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem !important;
+    }
+
+    /* Images & Visuals */
+    .profile-img-container {
+        width: 140px !important;
+        height: 140px !important;
+    }
+
+    /* Navbar & Contact Bar Sync */
+    .navbar {
+        padding: 0.8rem 0 !important;
+    }
+    
+    .contact-bar {
+        padding: 0.4rem 0 !important;
+    }
+
+    /* Tables & Wrappers */
+    .table-wrapper, .pricing-table-container {
+        margin: 0 -1rem !important;
+        padding: 0 1rem !important;
+        width: calc(100% + 2rem) !important;
     }
 }

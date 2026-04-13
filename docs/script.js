@@ -39,13 +39,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const updateContactBarPos = () => {
+        const contactBar = document.querySelector('.contact-bar');
+        if (contactBar && navbar) {
+            contactBar.style.top = navbar.offsetHeight + 'px';
+        }
+    };
+
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        if (navbar) {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            updateContactBarPos();
         }
     });
+    window.addEventListener('resize', updateContactBarPos);
 
     // 2. Animacje Intersection Observer
     const fadeElements = document.querySelectorAll('.animate-on-scroll');
@@ -136,24 +147,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. Floating Contact Widget
-    const floatingContact = document.createElement('div');
-    floatingContact.className = 'floating-contact animate-on-scroll';
-    floatingContact.innerHTML = `
-        <div class="floating-contact-header" data-i18n="widget_title">Skontaktuj się ze mną</div>
-        <div class="floating-contact-item">
-            <i class="fab fa-whatsapp"></i>
-            <a href="https://wa.me/48514126061" target="_blank" rel="noopener noreferrer">+48 514 126 061</a>
-        </div>
-        <div class="floating-contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:artugilowski@gmail.com">artugilowski@gmail.com</a>
+    // 5. Contact Info Bar (Horizontal under header)
+    const contactBar = document.createElement('div');
+    contactBar.className = 'contact-bar';
+    contactBar.innerHTML = `
+        <div class="contact-bar-container">
+            <div class="contact-bar-item">
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/48514126061" target="_blank" rel="noopener noreferrer">+48 514 126 061</a>
+            </div>
+            <div class="contact-bar-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:artugilowski@gmail.com">artugilowski@gmail.com</a>
+            </div>
         </div>
     `;
-    document.body.appendChild(floatingContact);
+    document.body.appendChild(contactBar);
     
-    // Add small delay to trigger CSS transition
-    setTimeout(() => floatingContact.classList.add('visible'), 100);
+    // Add small delay to trigger CSS transition and initial position
+    setTimeout(() => {
+        contactBar.classList.add('visible');
+        if (typeof updateContactBarPos === 'function') updateContactBarPos();
+    }, 100);
 
     // 6. Scroll Axis (Progress & ScrollSpy)
     const scrollAxis = document.querySelector('.scroll-axis');
