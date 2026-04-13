@@ -32,6 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
+            // Prevent menu closing when clicking a dropdown parent on mobile
+            if (window.innerWidth <= 768 && link.closest('.dropdown')) {
+                // If the link itself doesn't have a specific target (only #), don't close
+                if (link.getAttribute('href') === '#') return;
+            }
+            
             navMenu.classList.remove('active');
             const icon = hamburger.querySelector('i');
             icon.classList.remove('fa-times');
