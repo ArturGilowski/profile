@@ -1,0 +1,335 @@
+<!DOCTYPE html><html lang="pl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artur Gilowski - Deep Trip Divers - Profesjonalne wyprawy nurkowe">
+    <title data-i18n="txt_diving_title">Deep Trip Divers - Nurkowanie</title>
+    <link rel="icon" type="image/jpeg" href="profile.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Nawigacja -->
+    <nav class="navbar scrolled" id="navbar" style="padding: 1rem 0; background: var(--bg-surface); border-bottom: 1px solid var(--border-color);">
+        <div class="nav-container">
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="nav-link"><span data-i18n="nav_uslugi">Usługi</span> <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="uslugi-it.html" class="dropdown-item" data-i18n="nav_it">Technologie IT</a>
+                        <a href="uslugi-ai.html" class="dropdown-item" data-i18n="nav_ai">Rozwiązania AI</a>
+                        <a href="inwestycje.html" class="dropdown-item" data-i18n="nav_crypto">Inwestycje Crypto</a>
+                        <a href="fotografia.html" class="dropdown-item" data-i18n="nav_foto">Fotografia</a>
+                        <a href="smm.html" class="dropdown-item" data-i18n="nav_smm">SMM</a>
+                        <a href="ofm.html" class="dropdown-item" data-i18n="nav_ofm">OnlyFans Management</a>
+                        <a href="arkusze.html" class="dropdown-item" data-i18n="nav_sheets">Specjalistyczne Arkusze Google</a>
+                    </div>
+                </li>
+                                <li class="nav-push"><a href="index.html" class="nav-link" data-i18n="nav_back">Wróć do Głównej</a></li>
+                <li><a href="portfolio.html" class="nav-link" data-i18n="nav_portfolio">Portfolio</a></li>
+                <li><a href="certyfikaty.html" class="nav-link" data-i18n="nav_certs">Certyfikaty</a></li>
+                <li><a href="cennik.html" class="nav-link" data-i18n="nav_pricing">Cennik</a></li>
+                <li><a href="o-mnie.html" class="nav-link" data-i18n="nav_about">O mnie</a></li>
+                <li><a href="index.html#kontakt" class="nav-link nav-btn" data-i18n="nav_contact" style="border-color:var(--text-primary);">Kontakt</a></li>
+                
+                <li class="lang-switcher">
+                    <button class="lang-btn active" onclick="switchLanguage('pl')">PL</button> | 
+                    <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="subpage-header animate-on-scroll">
+        <div class="section-container text-center">
+            <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 30px; display: inline-block; margin-bottom: 2rem; backdrop-filter: blur(5px);">
+                <img src="images/logo.png" alt="Logo" style="max-height: 80px;">
+            </div>
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);" data-i18n="txt_diving_heading">Organizujemy Wyjazdy Nurkowe</h1>
+            <p class="section-text" style="max-width: 600px; margin: 0 auto;" data-i18n="txt_diving_desc">Odkryj z nami podwodny świat. Profesjonalne wyprawy, szkolenia i niezapomniane przygody pod okiem ekspertów.</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section animate-on-scroll">
+        <div class="section-container split-layout">
+            <div class="split-visual">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="images/me.png" alt="About Deep Trip Divers">
+                    </div>
+                </div>
+            </div>
+            <div class="split-content">
+                <h2 class="section-title" data-i18n="nav_about">O nas</h2>
+                <p class="section-text" data-i18n="txt_diving_about_p1">DEEP TRIP DIVERS to znacznie więcej niż organizator wypraw nurkowych. To społeczność stworzona dla wszystkich, którzy chcą rozpocząć swoją przygodę z nurkowaniem, rozwijać swoje umiejętności lub wynieść swoją pasję na zupełnie nowy poziom.</p>
+                <p class="section-text" data-i18n="txt_diving_about_p2">Niezależnie od tego, czy dopiero zaczynasz, czy masz już doświadczenie — u nas znajdziesz coś dla siebie. Prowadzimy kursy od poziomu OWD (Open Water Diver), przez kolejne stopnie zaawansowania, aż po Divemaster.</p>
+                <p class="section-text font-bold" data-i18n="txt_diving_about_list_title">DEEP TRIP DIVERS to miejsce, w którym możesz:</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="txt_diving_about_li1">nauczyć się nurkować od podstaw</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="txt_diving_about_li2">rozwijać swoje umiejętności i zdobywać kolejne certyfikaty</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="txt_diving_about_li3">uczestniczyć w wyprawach nurkowych na całym świecie</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="txt_diving_about_li4">poznawać ludzi, którzy dzielą tę samą pasję</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="txt_diving_about_li5">budować długofalową ścieżkę rozwoju w nurkowaniu</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nadchodzące Wyprawy -->
+    <section class="section section-darker animate-on-scroll" id="trips">
+        <div class="section-container">
+            <h2 class="section-title text-center" data-i18n="txt_diving_trips_title">Nadchodzące wyprawy</h2>
+            <div class="table-wrapper shadow-glow">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="txt_diving_trips_place">Miejsce</th>
+                            <th data-i18n="txt_diving_trips_date">Data</th>
+                            <th data-i18n="txt_diving_trips_slots">Miejsca</th>
+                            <th data-i18n="txt_diving_trips_price">Cena</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Egipt - Marsa Alam</td>
+                            <td>2026-04-12</td>
+                            <td>6/10</td>
+                            <td class="font-bold">4 900 PLN</td>
+                            <td><button class="nav-btn-diving" onclick="openTripModal('Egipt - Marsa Alam')" data-i18n="txt_diving_trips_signup">Zapisz się</button></td>
+                        </tr>
+                        <tr>
+                            <td>Malta</td>
+                            <td>2026-06-01</td>
+                            <td>4/10</td>
+                            <td class="font-bold">5 200 PLN</td>
+                            <td><button class="nav-btn-diving" onclick="openTripModal('Malta')" data-i18n="txt_diving_trips_signup">Zapisz się</button></td>
+                        </tr>
+                        <tr>
+                            <td>Chorwacja</td>
+                            <td>2026-08-20</td>
+                            <td>8/10</td>
+                            <td class="font-bold">4 300 PLN</td>
+                            <td><button class="nav-btn-diving" onclick="openTripModal('Chorwacja')" data-i18n="txt_diving_trips_signup">Zapisz się</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline History -->
+    <section class="section animate-on-scroll">
+        <div class="section-container">
+            <h2 class="section-title text-center" data-i18n="txt_diving_timeline_title">Nasza historia</h2>
+            <div class="timeline-scroll">
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-event">
+                        <div class="timeline-content">
+                            <p class="timeline-date">Luty 2024</p>
+                            <p class="timeline-text">Pierwszy stopień nurkowy OWD PADI</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div style="height: 40px;"></div>
+                    </div>
+                    <div class="timeline-event">
+                        <div style="height: 40px;"></div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <p class="timeline-date">Lipiec 2024</p>
+                            <p class="timeline-text">Nurkowanie w Chorwacji</p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-content">
+                            <p class="timeline-date">Sierpień 2025</p>
+                            <p class="timeline-text">Nurkowanie na Sri Lance</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div style="height: 40px;"></div>
+                    </div>
+                    <div class="timeline-event">
+                        <div style="height: 40px;"></div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <p class="timeline-date">Grudzień 2025</p>
+                            <p class="timeline-text">Narodziny pomysłu Deep Trip Divers</p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-content">
+                            <p class="timeline-date">Październik 2026</p>
+                            <p class="timeline-text">Pierwsza wyprawa do Egiptu</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div style="height: 40px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elite Section -->
+    <section class="section elite-section animate-on-scroll" id="elite">
+        <div class="section-container split-layout">
+            <div class="split-content">
+                <h2 class="hero-title" style="font-size: 2.5rem; color: white;" data-i18n="txt_diving_elite_title">DEEP TRIP DIVERS ELITE</h2>
+                <p class="section-text" style="color: #aaa;" data-i18n="txt_diving_elite_p1">DEEP TRIP DIVERS ELITE to zamknięta, ekskluzywna część społeczności DEEP TRIP DIVERS, stworzona dla osób, które oczekują najwyższego poziomu doświadczeń, dyskrecji oraz dostępu do wyjątkowych projektów i ludzi.</p>
+                <p class="section-text" style="color: #aaa;" data-i18n="txt_diving_elite_p2">Dostęp do programu ELITE jest weryfikowany przez nasz zespół i przeznaczony dla jednostek HNWI oraz osób o ponadprzeciętnym poziomie życiowym.</p>
+                <ul class="feature-list" style="color: #aaa;">
+                    <li><i class="fas fa-star" style="color: gold;"></i> <span data-i18n="txt_diving_elite_li1">luksusowe zakwaterowanie</span></li>
+                    <li><i class="fas fa-star" style="color: gold;"></i> <span data-i18n="txt_diving_elite_li2">prywatne transfery i czartery</span></li>
+                    <li><i class="fas fa-star" style="color: gold;"></i> <span data-i18n="txt_diving_elite_li3">ekskluzywne doświadczenia poza nurkowaniem</span></li>
+                </ul>
+            </div>
+            <div class="split-visual">
+                <div class="elite-logo-wrapper">
+                    <img src="images/logoelite.png" alt="Elite Logo" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecology PADI Aware -->
+    <section class="section animate-on-scroll">
+        <div class="section-container split-layout">
+            <div class="split-visual">
+                <img src="images/PADI_AWARE_Foundation_Logo.jpg" alt="PADI AWARE" style="max-width:300px;">
+            </div>
+            <div class="split-content">
+                <h2 class="section-title" data-i18n="txt_diving_ecology_title">Wspieramy PADI AWARE Foundation</h2>
+                <p class="section-text" data-i18n="txt_diving_ecology_p1">PADI AWARE Foundation to organizacja non-profit, której celem jest ochrona oceanów poprzez edukację i badania. Aktywnie wspieramy te działania, organizując wyprawy w duchu zrównoważonego rozwoju.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Embeds -->
+    <section class="section section-darker animate-on-scroll" id="social">
+        <div class="section-container">
+            <h2 class="section-title text-center" data-i18n="txt_diving_social_title">Odwiedź nas na</h2>
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                <div class="service-card">
+                    <h3 data-i18n="txt_diving_social_fb">Nasz profil na Facebooku</h3>
+                    <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61587391119599" data-tabs="timeline" data-width="500" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+                </div>
+                <div class="service-card">
+                    <h3 data-i18n="txt_diving_social_ig">Najnowszy post na Instagramie</h3>
+                    <div style="background: var(--bg-surface); padding: 1rem; border-radius: 12px; text-align: center;">
+                         <a href="https://www.instagram.com/deeptripdivers_/" target="_blank" style="color: var(--text-primary); font-weight: 600;">@deeptripdivers_</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section animate-on-scroll">
+        <div class="section-container contact-container text-center">
+            <h2 class="section-title" data-i18n="txt_diving_newsletter_title">Newsletter</h2>
+            <p class="section-text" data-i18n="txt_diving_newsletter_desc">Zapisz się, aby otrzymywać informacje o wyprawach.</p>
+            <form class="contact-form" style="max-width: 500px; margin: 0 auto;">
+                <div class="form-group">
+                    <input type="email" data-i18n="txt_diving_newsletter_placeholder" placeholder="Twój email" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-full" data-i18n="txt_diving_newsletter_btn">Zapisz się</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>AG.</h3>
+                <p data-i18n="footer_slogan">Usługi od A do Z, AI, IT, Fotografia i SMM.</p>
+            </div>
+
+            <div class="footer-payments">
+                <h4 data-i18n="footer_payments_title" style="margin-bottom: 0.5rem; font-size: 1rem;">Płatności</h4>
+                <a href="cennik.html#platnosci" class="payment-icons">
+                    <i class="fas fa-money-bill-wave" data-i18n-title="footer_cash" title="Gotówka"></i>
+                    <i class="fab fa-bitcoin" data-i18n-title="footer_btc" title="Bitcoin"></i>
+                    <i class="fas fa-university" data-i18n-title="footer_transfer" title="Przelew"></i>
+                    <i class="fab fa-paypal" data-i18n-title="footer_paypal" title="PayPal"></i>
+                </a>
+                <p class="footer-notice" data-i18n="footer_payments_note">Wszelkie usługi rozpoczynane są po otrzymaniu zaliczki lub pełnej kwoty.</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/artur-gilowski-1b16893b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ArturGilowski" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/GilowskiArtur" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copy">© 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
+            <a href="polityka.html" data-i18n="footer_legal" style="color: var(--text-secondary); text-decoration: none; font-size: 0.8rem; margin-top: 0.5rem; display: block;">Regulamin i Polityka</a>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-container">
+            <p class="cookie-text" data-i18n="cookie_text">Ta strona używa plików cookies... <a href="polityka.html" data-i18n="nav_legal">Regulamin</a></p>
+            <button id="cookie-accept" class="cookie-btn" data-i18n="cookie_accept">Akceptuję</button>
+        </div>
+    </div>
+
+    <!-- Trip Modal -->
+    <div id="trip-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeTripModal()">&times;</button>
+            <h2 id="modal-title" class="section-title" style="margin-bottom: 1rem;">Zapisz się</h2>
+            <p class="section-text" data-i18n="txt_diving_cta">Dołącz do Wyprawy</p>
+            <form class="contact-form" action="https://formsubmit.co/artugilowski@gmail.com" method="POST">
+                <input type="hidden" name="trip_name" id="modal-trip-input">
+                <div class="form-group">
+                    <label data-i18n="txt_index_149">Imię i nazwisko</label>
+                    <input type="text" name="name" required placeholder="Jan Kowalski">
+                </div>
+                <div class="form-group">
+                    <label data-i18n="txt_index_150">Adres email</label>
+                    <input type="email" name="email" required placeholder="email@domena.pl">
+                </div>
+                <button type="submit" class="btn btn-primary w-full shadow-glow" data-i18n="txt_diving_trips_signup">Zapisz się</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top" aria-label="Wróć na górę"><i class="fas fa-chevron-up"></i></a>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    
+    <script>
+        // Modal Logic
+        function openTripModal(tripName) {
+            document.getElementById('modal-title').innerText = tripName;
+            document.getElementById('modal-trip-input').value = tripName;
+            document.getElementById('trip-modal').classList.add('active');
+        }
+        function closeTripModal() {
+            document.getElementById('trip-modal').classList.remove('active');
+        }
+
+        // Facebook SDK
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v15.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+</body></html>

@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="pl"><head>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Artur Gilowski - Technologie IT">
@@ -13,7 +15,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="theme-blue">
     <nav class="navbar scrolled" id="navbar" style="padding: 1rem 0; background: var(--bg-surface); border-bottom: 1px solid var(--border-color);">
         <div class="nav-container">
             <div class="hamburger" id="hamburger">
@@ -27,7 +29,6 @@
                         <a href="uslugi-ai.html" class="dropdown-item" data-i18n="nav_ai">Rozwiązania AI</a>
                         <a href="inwestycje.html" class="dropdown-item" data-i18n="nav_crypto">Inwestycje Crypto</a>
                         <a href="fotografia.html" class="dropdown-item" data-i18n="nav_foto">Fotografia</a>
-                        <a href="sport.html" class="dropdown-item" data-i18n="nav_sport">Zajęcia Sportowe</a>
                         <a href="smm.html" class="dropdown-item" data-i18n="nav_smm">SMM</a>
                         <a href="ofm.html" class="dropdown-item" data-i18n="nav_ofm">OnlyFans Management</a>
                         <a href="arkusze.html" class="dropdown-item" data-i18n="nav_sheets">Specjalistyczne Arkusze Google</a>
@@ -50,24 +51,120 @@
 
     <header class="subpage-header animate-on-scroll">
         <div class="section-container text-center">
-            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);" data-i18n="txt_uslugi_it_220">Technologie Informatyczne</h1>
-            <p class="section-text" style="max-width: 600px; margin: 0 auto;" data-i18n="txt_uslugi_it_221">Rozwój i modernizacja architektury IT Twojego biznesu.</p>
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);" data-i18n="txt_uslugi_it_220">Dedykowane Technologie IT</h1>
+            <p class="section-text" style="max-width: 900px; margin: 2rem auto; font-size: 1.25rem; opacity: 0.9;" data-i18n="txt_uslugi_it_221">Oferuję profesjonalne tworzenie dedykowanych rozwiązań technologicznych dla firm i klientów indywidualnych — od koncepcji aż po pełne wdrożenie i dalszy rozwój. Skupiam się na budowaniu systemów, które realnie zwiększają efektywność, automatyzują procesy i dają przewagę konkurencyjną.</p>
         </div>
     </header>
 
-    <section class="section" style="padding-top: 2rem; min-height: 50vh;">
+    <!-- Software Section -->
+    <section class="section" style="background: var(--bg-surface);">
         <div class="section-container animate-on-scroll">
-            <div class="service-card" style="margin: 0 auto; max-width: 800px; background: transparent; border: none; padding: 0;">
-                <div class="service-icon" style="text-align: center; font-size: 4rem; color: var(--text-primary);"><i class="fas fa-code"></i></div>
-                <p style="text-align: center; color: var(--text-secondary); margin: 2rem 0; font-size: 1.1rem; line-height: 1.6;" data-i18n="txt_uslugi_it_222">Oferuję profesjonalne tworzenie dedykowanych rozwiązań programistycznych dla firm i osób prywatnych. Moja praca obejmuje pełen cykl oprogramowania od analizy wymagań po ostateczne wdrożenie i utrzymanie.</p>
-                <ul class="card-list" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
-                    <li data-i18n="txt_uslugi_it_223"><i class="fas fa-check" style="color:var(--text-primary)"></i> Tworzenie responsywnych, nowoczesnych stron i aplikacji webowych</li>
-                    <li data-i18n="txt_uslugi_it_224"><i class="fas fa-check" style="color:var(--text-primary)"></i> Optymalizacja procesów back-office</li>
-                    <li data-i18n="txt_uslugi_it_225"><i class="fas fa-check" style="color:var(--text-primary)"></i> Spersonalizowane Dashboardy pozwalające w łatwy sposób kontrolować analitykę firmową</li>
-                    <li data-i18n="txt_uslugi_it_226"><i class="fas fa-check" style="color:var(--text-primary)"></i> Składanie oraz pomoc w wyborze specjalistycznego sprzętu komputerowego np. (Home Office, Serwery, Crypto Mining)</li>
-                </ul>
-                <div style="text-align: center; margin-top: 3rem;">
-                    <a href="index.html#kontakt" class="btn btn-primary" data-i18n="txt_uslugi_it_227">Skontaktuj się ze mną</a>
+            <h2 class="section-title" data-i18n="txt_it_soft_title">💻 Tworzenie oprogramowania i aplikacji</h2>
+            <p class="section-text" data-i18n="txt_it_soft_desc">Projektuję i rozwijam nowoczesne, wydajne aplikacje dopasowane dokładnie pod Twoje potrzeby biznesowe:</p>
+            
+            <div class="services-grid" style="margin-top: 3rem;">
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <p data-i18n="txt_it_soft_li1">Tworzenie responsywnych stron internetowych oraz aplikacji webowych klasy premium</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
+                    <p data-i18n="txt_it_soft_li2">Budowa dedykowanych systemów SaaS i narzędzi wewnętrznych dla firm</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                    <p data-i18n="txt_it_soft_li3">Tworzenie aplikacji desktopowych oraz backendów pod zaawansowane procesy</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-cog"></i></div>
+                    <p data-i18n="txt_it_soft_li4">Aplikacje pisane na zamówienie – od prostych narzędzi po złożone systemy operacyjne dla biznesu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automation Section -->
+    <section class="section">
+        <div class="section-container animate-on-scroll">
+            <h2 class="section-title" data-i18n="txt_it_auto_title">📊 Automatyzacja i optymalizacja biznesu</h2>
+            <p class="section-text" data-i18n="txt_it_auto_desc">Pomagam firmom zwiększać zyski poprzez technologię:</p>
+            
+            <div class="services-grid" style="margin-top: 3rem;">
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <p data-i18n="txt_it_auto_li1">Automatyzacja procesów back-office (oszczędność czasu i kosztów)</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                    <p data-i18n="txt_it_auto_li2">Integracje systemów i API</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <p data-i18n="txt_it_auto_li3">Tworzenie spersonalizowanych dashboardów do analizy danych w czasie rzeczywistym</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                    <p data-i18n="txt_it_auto_li4">Narzędzia do zarządzania firmą, sprzedażą i operacjami</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Section -->
+    <section class="section" style="background: var(--bg-surface);">
+        <div class="section-container animate-on-scroll">
+            <h2 class="section-title" data-i18n="txt_it_hard_title">⚙️ Sprzęt komputerowy dopasowany do celu</h2>
+            <p class="section-text" data-i18n="txt_it_hard_desc">Nie sprzedaję „komputerów” — projektuję rozwiązania sprzętowe pod konkretny rezultat:</p>
+            
+            <div class="services-grid" style="margin-top: 3rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-home"></i></div>
+                    <h3 style="margin-bottom: 1rem; color: var(--text-primary);" data-i18n="txt_it_hard_sub1_title">🖥️ Komputery prywatne i Home Office</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.8;" data-i18n="txt_it_hard_sub1_desc">Idealnie dobrane zestawy pod pracę, gaming lub multitasking. Maksymalna wydajność w stosunku do budżetu. Cisza, stabilność i ergonomia pracy.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <h3 style="margin-bottom: 1rem; color: var(--text-primary);" data-i18n="txt_it_hard_sub2_title">🏢 Sprzęt dla firm i serwery</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.8;" data-i18n="txt_it_hard_sub2_desc">Budowa i konfiguracja serwerów lokalnych oraz infrastruktury IT. Systemy pod przechowywanie danych, backup i bezpieczeństwo. Skalowalne rozwiązania pod rozwój firmy.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-brain"></i></div>
+                    <h3 style="margin-bottom: 1rem; color: var(--text-primary);" data-i18n="txt_it_hard_sub3_title">🤖 Komputery pod AI i Machine Learning</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.8;" data-i18n="txt_it_hard_sub3_desc">Stacje robocze zoptymalizowane pod trenowanie modeli AI. Dobór GPU, CPU i pamięci pod konkretne zastosowania (LLM, video AI, itd.). Maksymalizacja wydajności obliczeniowej.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-coins"></i></div>
+                    <h3 style="margin-bottom: 1rem; color: var(--text-primary);" data-i18n="txt_it_hard_sub4_title">⛏️ Sprzęt do kopania kryptowalut</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.8;" data-i18n="txt_it_hard_sub4_desc">Projektowanie i składanie rigów miningowych. Optymalizacja kosztów vs. wydajność. Doradztwo w zakresie skalowania i zarządzania sprzętem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="section">
+        <div class="section-container animate-on-scroll">
+            <div class="glass" style="padding: 4rem; border-radius: 30px; text-align: center; border: 1px solid var(--border-color);">
+                <h2 class="section-title" data-i18n="txt_it_approach_title">🚀 Podejście</h2>
+                <p class="section-text" style="font-size: 1.5rem; color: var(--text-primary);" data-i18n="txt_it_approach_desc">Nie działam jak software house — działam jak partner technologiczny.</p>
+                
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem; margin-top: 3rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-search-dollar" style="font-size: 2rem; color: var(--text-primary);"></i>
+                        <span style="font-weight: 600;" data-i18n="txt_it_approach_li1">Analizuję, gdzie realnie możesz zarobić więcej</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-expand-arrows-alt" style="font-size: 2rem; color: var(--text-primary);"></i>
+                        <span style="font-weight: 600;" data-i18n="txt_it_approach_li2">Buduję rozwiązania, które się skalują</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-bullseye" style="font-size: 2rem; color: var(--text-primary);"></i>
+                        <span style="font-weight: 600;" data-i18n="txt_it_approach_li3">Optymalizuję pod wynik, nie pod „ładny kod”</span>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 4rem;">
+                    <a href="index.html#kontakt" class="btn btn-primary btn-lg" data-i18n="txt_uslugi_it_227">Skontaktuj się ze mną</a>
                 </div>
             </div>
         </div>
@@ -77,8 +174,20 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <h3>AG.</h3>
-                <p data-i18n="footer_slogan">Usługi od A do Z: AI, IT, Fotografia, SMM i Sport.</p>
+                <p data-i18n="footer_slogan">Usługi od A do Z, AI, IT, Fotografia i SMM.</p>
             </div>
+
+            <div class="footer-payments">
+                <h4 data-i18n="footer_payments_title" style="margin-bottom: 0.5rem; font-size: 1rem;">Płatności</h4>
+                <a href="cennik.html#platnosci" class="payment-icons">
+                    <i class="fas fa-money-bill-wave" data-i18n-title="footer_cash" title="Gotówka"></i>
+                    <i class="fab fa-bitcoin" data-i18n-title="footer_btc" title="Bitcoin"></i>
+                    <i class="fas fa-university" data-i18n-title="footer_transfer" title="Przelew"></i>
+                    <i class="fab fa-paypal" data-i18n-title="footer_paypal" title="PayPal"></i>
+                </a>
+                <p class="footer-notice" data-i18n="footer_payments_note">Wszelkie usługi rozpoczynane są po otrzymaniu zaliczki lub pełnej kwoty.</p>
+            </div>
+
             <div class="footer-social">
                 <a href="https://www.linkedin.com/in/artur-gilowski-1b16893b8/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/ArturGilowski" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
@@ -87,10 +196,17 @@
         </div>
         <div class="footer-bottom">
             <p data-i18n="footer_copy">© 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
+            <a href="polityka.html" data-i18n="footer_legal" style="color: var(--text-secondary); text-decoration: none; font-size: 0.8rem; margin-top: 0.5rem; display: block;">Regulamin i Polityka</a>
         </div>
     </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-container">
+            <p class="cookie-text" data-i18n="cookie_text">Ta strona używa plików cookies... <a href="polityka.html" data-i18n="nav_legal">Regulamin</a></p>
+            <button id="cookie-accept" class="cookie-btn" data-i18n="cookie_accept">Akceptuję</button>
+        </div>
+    </div>
     <script src="translations.js"></script>
     <script src="script.js"></script>
-
-
-</body></html>
+</body>
+</html>

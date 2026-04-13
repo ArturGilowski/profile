@@ -1,8 +1,10 @@
-<!DOCTYPE html><html lang="pl"><head>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Artur Gilowski - Rozwiązania AI">
-    <title>Artur Gilowski - Rozwiązania AI</title>
+    <meta name="description" content="Artur Gilowski - Rozwiązania AI & Automatyzacja">
+    <title>Artur Gilowski - Rozwiązania AI & Automatyzacja</title>
     <link rel="icon" type="image/jpeg" href="profile.jpg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +15,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="theme-green">
     <nav class="navbar scrolled" id="navbar" style="padding: 1rem 0; background: var(--bg-surface); border-bottom: 1px solid var(--border-color);">
         <div class="nav-container">
             <div class="hamburger" id="hamburger">
@@ -27,7 +29,6 @@
                         <a href="uslugi-ai.html" class="dropdown-item" data-i18n="nav_ai">Rozwiązania AI</a>
                         <a href="inwestycje.html" class="dropdown-item" data-i18n="nav_crypto">Inwestycje Crypto</a>
                         <a href="fotografia.html" class="dropdown-item" data-i18n="nav_foto">Fotografia</a>
-                        <a href="sport.html" class="dropdown-item" data-i18n="nav_sport">Zajęcia Sportowe</a>
                         <a href="smm.html" class="dropdown-item" data-i18n="nav_smm">SMM</a>
                         <a href="ofm.html" class="dropdown-item" data-i18n="nav_ofm">OnlyFans Management</a>
                         <a href="arkusze.html" class="dropdown-item" data-i18n="nav_sheets">Specjalistyczne Arkusze Google</a>
@@ -50,46 +51,155 @@
 
     <header class="subpage-header animate-on-scroll">
         <div class="section-container text-center">
-            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);" data-i18n="txt_uslugi_ai_212">Rozwiązania Sztucznej Inteligencji</h1>
-            <p class="section-text" style="max-width: 600px; margin: 0 auto;" data-i18n="txt_uslugi_ai_213">Optymalizacja kosztów i czasu dzięki wykorzystaniu najnowszych modeli AI (LLMs).</p>
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);" data-i18n="txt_ai_hero_title">Automatyzacja i AI w Twoim biznesie</h1>
+            <p class="section-text" style="max-width: 900px; margin: 2rem auto; font-size: 1.25rem; opacity: 0.9;" data-i18n="txt_ai_hero_p1">Automatyzacja to nie trend — to fundament nowoczesnych firm. Biznesy, które wdrażają sztuczną inteligencję i automatyczne procesy, działają szybciej, taniej i skalują się bez zwiększania zespołu.</p>
+            <p class="section-text" style="max-width: 800px; margin: 0 auto; opacity: 0.8;" data-i18n="txt_ai_hero_p2">Projektuję i wdrażam systemy, które eliminują powtarzalne zadania, usprawniają komunikację i realnie zwiększają efektywność operacyjną.</p>
         </div>
     </header>
 
-    <section class="section" style="padding-top: 2rem; min-height: 50vh;">
+    <!-- Section 1: Chatbots -->
+    <section class="section" style="background: var(--bg-surface);">
         <div class="section-container animate-on-scroll">
-            <div class="service-card" style="margin: 0 auto; max-width: 800px; background: transparent; border: none; padding: 0;">
-                <div class="service-icon" style="text-align: center; font-size: 4rem; color: var(--text-primary);"><i class="fas fa-robot"></i></div>
-                <p style="text-align: center; color: var(--text-secondary); margin: 2rem 0; font-size: 1.1rem; line-height: 1.6;" data-i18n="txt_uslugi_ai_214">Automatyzacja to przyszłość, z którą powinieneś zapoznać swój biznes jak najszybciej. Konfiguruję chatboty, inteligentne przepływy wiadomości (Make.com, Zapier) czy dedykowane asystenty wyszkolone na Twoich wewnętrznych bazach danych.</p>
-                <ul class="card-list" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
-                    <li data-i18n="txt_uslugi_ai_215"><i class="fas fa-check" style="color:var(--text-primary)"></i> Automatyzacja przepływu pracy (generowanie faktur, odpowiedzi na e-mail)</li>
-                    <li data-i18n="txt_uslugi_ai_216"><i class="fas fa-check" style="color:var(--text-primary)"></i> Konsulting wdrożeniowy systemów opartych i OpenAI / Claude / Gemini</li>
-                    <li data-i18n="txt_uslugi_ai_217"><i class="fas fa-check" style="color:var(--text-primary)"></i> Kursy AI dla "zielonych" – jak przestać się bać i zacząć wykorzystywać chatbota</li>
-                    <li data-i18n="txt_uslugi_ai_218"><i class="fas fa-check" style="color:var(--text-primary)"></i> Kursy AI zaawansowane – promptowanie, inżynieria zapytań i integracje API</li>
-                </ul>
-                <div style="text-align: center; margin-top: 3rem;">
-                    <a href="index.html#kontakt" class="btn btn-primary" data-i18n="txt_uslugi_ai_219">Skontaktuj się ze mną</a>
+            <div class="service-card glass" style="padding: 4rem; flex-direction: row; align-items: center; gap: 4rem; flex-wrap: wrap;">
+                <div class="service-icon" style="font-size: 5rem; flex: 0 0 100px; text-align: center;"><i class="fas fa-robot"></i></div>
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);" data-i18n="txt_ai_bots_title">🤖 Inteligentne chatboty i asystenci AI</h2>
+                    <p style="margin-bottom: 2rem;" data-i18n="txt_ai_bots_desc">Konfiguruję inteligentne chatboty oraz asystentów AI działających 24/7, opartych o rozwiązania takie jak OpenAI, Claude oraz Gemini.</p>
+                    <h4 style="margin-bottom: 1rem; color: var(--text-primary);" data-i18n="txt_ai_bots_list_title">Systemy te są trenowane na Twoich danych, dzięki czemu:</h4>
+                    <ul class="card-list">
+                        <li data-i18n="txt_ai_bots_li1">odpowiadają klientom zgodnie z Twoim stylem komunikacji</li>
+                        <li data-i18n="txt_ai_bots_li2">znają ofertę, procedury i procesy w firmie</li>
+                        <li data-i18n="txt_ai_bots_li3">mogą obsługiwać sprzedaż, wsparcie oraz onboarding klientów</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Section 2: Workflows -->
+    <section class="section">
+        <div class="section-container animate-on-scroll">
+            <h2 class="section-title text-center" data-i18n="txt_ai_flow_title">📈 Automatyzacja procesów back-office</h2>
+            <p class="section-text text-center" style="max-width: 800px; margin: 2rem auto;" data-i18n="txt_ai_flow_desc">Tworzę automatyczne przepływy pracy, które eliminują ręczne działania i minimalizują błędy. Integruję narzędzia takie jak Make.com oraz Zapier, budując systemy działające w tle.</p>
+            
+            <div class="services-grid" style="margin-top: 4rem;">
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <p data-i18n="txt_ai_flow_li1">automatyczne generowanie i wysyłanie faktur</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <p data-i18n="txt_ai_flow_li2">obsługa wiadomości e-mail i zapytań klientów</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-sync"></i></div>
+                    <p data-i18n="txt_ai_flow_li3">synchronizacja danych między systemami</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon"><i class="fas fa-user-plus"></i></div>
+                    <p data-i18n="txt_ai_flow_li4">automatyczne działania po zakupie (np. onboarding, follow-up)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Consulting -->
+    <section class="section" style="background: var(--bg-surface);">
+        <div class="section-container animate-on-scroll">
+            <div class="glass" style="padding: 4rem; border-radius: 30px; border: 1px solid var(--border-color);">
+                <h2 class="section-title" data-i18n="txt_ai_cons_title">💡 Strategia i konsulting wdrożeniowy</h2>
+                <p class="section-text" style="margin-bottom: 3rem;" data-i18n="txt_ai_cons_desc">Oferuję konsulting wdrożeniowy w zakresie AI i automatyzacji. Celem jest wdrożenie systemów, które realnie zwiększają wydajność i przychody.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div class="service-card" style="background: var(--bg-surface); padding: 2rem;">
+                        <span style="font-size: 2rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1rem; display: block;">01.</span>
+                        <p data-i18n="txt_ai_cons_li1">analiza Twojego biznesu i obecnych procesów</p>
+                    </div>
+                    <div class="service-card" style="background: var(--bg-surface); padding: 2rem;">
+                        <span style="font-size: 2rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1rem; display: block;">02.</span>
+                        <p data-i18n="txt_ai_cons_li2">identyfikacja obszarów o największym potencjale optymalizacji</p>
+                    </div>
+                    <div class="service-card" style="background: var(--bg-surface); padding: 2rem;">
+                        <span style="font-size: 2rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1rem; display: block;">03.</span>
+                        <p data-i18n="txt_ai_cons_li3">zaprojektowanie konkretnych rozwiązań dopasowanych do Twojej działalności</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Grid: Beginner & Advanced -->
+    <section class="section">
+        <div class="section-container animate-on-scroll">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+                <!-- Beginner -->
+                <div class="service-card glass" style="border-top: 4px solid var(--text-primary);">
+                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h2 style="margin-bottom: 1.5rem;" data-i18n="txt_ai_train_beg_title">🎓 Szkolenia AI dla początkujących</h2>
+                    <p style="margin-bottom: 2rem;" data-i18n="txt_ai_train_beg_desc">Dla osób rozpoczynających pracę z AI oferuję szkolenia wprowadzające. Szkolenia są nastawione na zastosowanie, nie teorię.</p>
+                    <ul class="card-list" style="margin-top: auto;">
+                        <li data-i18n="txt_ai_train_beg_li1">praktyczne wykorzystanie chatbotów</li>
+                        <li data-i18n="txt_ai_train_beg_li2">automatyzacja codziennych zadań</li>
+                        <li data-i18n="txt_ai_train_beg_li3">podstawy pracy z narzędziami AI w biznesie</li>
+                    </ul>
+                </div>
+                <!-- Advanced -->
+                <div class="service-card glass" style="border-top: 4px solid var(--text-primary);">
+                    <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                    <h2 style="margin-bottom: 1.5rem;" data-i18n="txt_ai_train_adv_title">🚀 Zaawansowane szkolenia techniczne</h2>
+                    <p style="margin-bottom: 2rem;" data-i18n="txt_ai_train_adv_desc">Dla bardziej zaawansowanych użytkowników prowadzę szkolenia techniczne i wdrożeniowe. To poziom, który pozwala budować własne rozwiązania i skalować działania bez ograniczeń.</p>
+                    <ul class="card-list" style="margin-top: auto;">
+                        <li data-i18n="txt_ai_train_adv_li1">zaawansowane promptowanie i kontrola wyników AI</li>
+                        <li data-i18n="txt_ai_train_adv_li2">inżynieria zapytań</li>
+                        <li data-i18n="txt_ai_train_adv_li3">integracje API i budowa własnych narzędzi</li>
+                        <li data-i18n="txt_ai_train_adv_li4">tworzenie agentów AI i systemów automatycznych</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 5rem;">
+                <a href="index.html#kontakt" class="btn btn-primary btn-lg" data-i18n="txt_ai_cta">Skontaktuj się ze mną</a>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
-        <!-- identical footer layout -->
         <div class="footer-container">
             <div class="footer-brand">
                 <h3>AG.</h3>
-                <p data-i18n="footer_slogan">Usługi od A do Z: AI, IT, Fotografia, SMM i Sport.</p>
+                <p data-i18n="footer_slogan">Usługi od A do Z, AI, IT, Fotografia i SMM.</p>
             </div>
+
+            <div class="footer-payments">
+                <h4 data-i18n="footer_payments_title" style="margin-bottom: 0.5rem; font-size: 1rem;">Płatności</h4>
+                <a href="cennik.html#platnosci" class="payment-icons">
+                    <i class="fas fa-money-bill-wave" data-i18n-title="footer_cash" title="Gotówka"></i>
+                    <i class="fab fa-bitcoin" data-i18n-title="footer_btc" title="Bitcoin"></i>
+                    <i class="fas fa-university" data-i18n-title="footer_transfer" title="Przelew"></i>
+                    <i class="fab fa-paypal" data-i18n-title="footer_paypal" title="PayPal"></i>
+                </a>
+                <p class="footer-notice" data-i18n="footer_payments_note">Wszelkie usługi rozpoczynane są po otrzymaniu zaliczki lub pełnej kwoty.</p>
+            </div>
+
             <div class="footer-social">
                 <a href="https://www.linkedin.com/in/artur-gilowski-1b16893b8/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/ArturGilowski" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                 <a href="https://x.com/GilowskiArtur" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </div>
-        <div class="footer-bottom"><p data-i18n="footer_copy">© 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p></div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copy">© 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
+            <a href="polityka.html" data-i18n="footer_legal" style="color: var(--text-secondary); text-decoration: none; font-size: 0.8rem; margin-top: 0.5rem; display: block;">Regulamin i Polityka</a>
+        </div>
     </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-container">
+            <p class="cookie-text" data-i18n="cookie_text">Ta strona używa plików cookies... <a href="polityka.html" data-i18n="nav_legal">Regulamin</a></p>
+            <button id="cookie-accept" class="cookie-btn" data-i18n="cookie_accept">Akceptuję</button>
+        </div>
+    </div>
     <script src="translations.js"></script>
     <script src="script.js"></script>
-
-
-</body></html>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="legal_title">Regulamin i Polityka Prywatności</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .legal-section { margin-bottom: 2.5rem; }
+        .legal-section h2 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary); }
+        .legal-section p, .legal-section li { color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.8rem; }
+        .legal-section ul { padding-left: 1.2rem; }
+        .highlight-notice { border: 1px solid rgba(255, 71, 87, 0.2); padding: 1.5rem; border-radius: 12px; background: rgba(255, 71, 87, 0.05); margin-top: 2rem; }
+        
+        /* Navigation styles */
+        .subpage-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .subpage-nav .section-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .back-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        .back-link:hover { opacity: 0.8; }
+        
+        /* Layout adjustments */
+        .legal-content {
+            padding: 4rem;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Mobile overrides */
+        @media (max-width: 768px) {
+            .subpage-header {
+                padding: 6rem 1rem 3rem 1rem;
+            }
+            .hero-title {
+                font-size: 2rem !important;
+            }
+            .legal-content {
+                padding: 1.5rem;
+                margin-top: 0;
+            }
+            .legal-content p.section-text {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="subpage-nav">
+        <div class="section-container">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> <span data-i18n="nav_back">Wróć do Głównej</span></a>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLanguage('pl')">PL</button>
+                <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="subpage-header">
+        <div class="section-container">
+            <h1 class="hero-title" data-i18n="legal_title">Regulamin i Polityka Prywatności</h1>
+            <p class="section-text" data-i18n="legal_last_update">Ostatnia aktualizacja: 13.04.2026</p>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="section-container">
+            <div class="legal-content glass">
+                <p class="section-text" data-i18n="legal_intro" style="margin-bottom: 2rem; font-weight: 500;">
+                    Poniższy dokument określa zasady korzystania z witryny oraz świadczenia usług przez Artur Gilowski (ADMINISTRATOR). Korzystając z serwisu, akceptujesz poniższe warunki.
+                </p>
+                
+                <!-- 1. Regulamin -->
+                <section class="legal-section">
+                    <h2 data-i18n="legal_sec1_title">1. Regulamin strony i świadczenia usług</h2>
+                    <p data-i18n="legal_sec1_text">Administratorem witryny oraz usługodawcą jest Artur Gilowski (identyfikowalny poprzez dane w CEIDG). Niniejszy regulamin określa zasady współpracy w zakresie usług doradczych, technologicznych oraz marketingowych.</p>
+                    <ul>
+                        <li data-i18n="legal_sec1_li1"><b>Zakres usług:</b> Konsulting AI, budowa systemów IT (strony www, CRM), Social Media Management (SMM), OnlyFans Management (OFM) oraz edukacja w obszarze krypto.</li>
+                        <li data-i18n="legal_sec1_li2"><b>Zawarcie umowy:</b> Do podjęcia współpracy dochodzi poprzez mailową akceptację oferty lub podpisanie indywidualnej umowy określającej szczegółowy zakres prac.</li>
+                        <li data-i18n="legal_sec1_li3"><b>Zasady płatności:</b> Płatności odbywają się zgodnie z cennikiem dostępnym na stronie. Prace nad projektem ruszają po otrzymaniu zaliczki lub pełnej kwoty.</li>
+                    </ul>
+                </section>
+
+                <!-- 2. RODO -->
+                <section class="legal-section">
+                    <h2 data-i18n="legal_sec2_title">2. Polityka Prywatności (RODO)</h2>
+                    <p data-i18n="legal_sec2_text">Twoja prywatność jest dla mnie kluczowa. Przetwarzam Twoje dane wyłącznie w celach biznesowych i kontaktowych.</p>
+                    <ul>
+                        <li data-i18n="legal_sec2_li1"><b>Administrator danych:</b> Artur Gilowski (kontakt: artugilowski@gmail.com).</li>
+                        <li data-i18n="legal_sec2_li2"><b>Zbierane dane:</b> Adres email, imię, numer telefonu (jeśli podano) — służą do odpowiedzi na Twoje zapytanie.</li>
+                        <li data-i18n="legal_sec2_li3"><b>Twoje prawa:</b> Masz prawo do żądania dostępu do swoich danych, ich sprostowania, usunięcia ("prawo do bycia zapomnianym") lub ograniczenia przetwarzania.</li>
+                    </ul>
+                </section>
+
+                <!-- 3. Cookies -->
+                <section class="legal-section">
+                    <h2 data-i18n="legal_sec3_title">3. Cookies i Narzędzia Analityczne</h2>
+                    <p data-i18n="legal_sec3_text">Witryna korzysta z plików cookies w celu analizy ruchu (Google Analytics) oraz optymalizacji kampanii reklamowych (Meta Pixel). Możesz zarządzać ciasteczkami w ustawieniach przeglądarki.</p>
+                </section>
+
+                <!-- 4. Dane Firmy -->
+                <section class="legal-section">
+                    <h2 data-i18n="legal_sec4_title">4. Dane firmy i kontakt</h2>
+                    <p data-i18n="legal_sec4_text">Artur Gilowski, email: artugilowski@gmail.com. Siedziba oraz NIP są widoczne w rejestrze CEIDG i podawane na każdej wystawianej fakturze.</p>
+                </section>
+
+                <!-- 5. Brak gwarancji wyników -->
+                <section class="legal-section highlight-notice">
+                    <h2 data-i18n="legal_sec5_title" style="color: #ff4757;">5. Brak gwarancji wyników (Disclaimer)</h2>
+                    <p data-i18n="legal_sec5_text">To jest najważniejszy punkt regulaminu przy usługach o wysokim stopniu zmienności (SMM, OFM, Krypto, AI):</p>
+                    <ul>
+                        <li data-i18n="legal_sec5_li1"><b>Brak gwarancji finansowych:</b> administrator nie gwarantuje konkretnych zysków, zasięgów ani konwersji, ponieważ zależą one od algorytmów platform i decyzji osób trzecich.</li>
+                        <li data-i18n="legal_sec5_li2"><b>Odpowiedzialność:</b> Użytkownik podejmuje wszelkie decyzje biznesowe i inwestycyjne na własną odpowiedzialność.</li>
+                    </ul>
+                </section>
+
+                <!-- 6. Współpraca -->
+                <section class="legal-section">
+                    <h2 data-i18n="legal_sec6_title">6. Warunki współpracy i wypowiedzenie</h2>
+                    <p data-i18n="legal_sec6_text">Współpraca (szczególnie w modelu RevShare) opiera się na partnerskich zasadach. Warunki rezygnacji i rozwiązania umowy są ustalane indywidualnie przed startem projektu.</p>
+                </section>
+
+                <!-- 7. NDA / Krypto -->
+                <section class="legal-section">
+                    <h2 data-i18n="legal_sec7_title">7. Poufność (NDA) i Krypto</h2>
+                    <p data-i18n="legal_sec7_text">Jako Twój partner technologiczny gwarantuję pełną dyskrecję. Wszystkie dane dotyczące Twoich systemów AI lub kont OFM są objęte tajemnicą handlową.</p>
+                    <p data-i18n="legal_sec7_crypto" style="font-weight: 600; color: #f7931a;">Disclaimer Krypto: Treści na tej stronie mają charakter wyłącznie edukacyjny. Nie stanowią one porady inwestycyjnej ani finansowej.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>AG.</h3>
+                <p data-i18n="footer_slogan">Usługi od A do Z, AI, IT, Fotografia i SMM.</p>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copy">© 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
+                <a href="polityka.html" data-i18n="footer_legal" style="color: var(--text-secondary); text-decoration: none; font-size: 0.8rem; margin-top: 0.5rem; display: block;">Regulamin i Polityka</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -93,24 +93,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (response.ok) {
                     contactForm.reset();
                     formStatus.classList.remove('hidden');
-                    formStatus.textContent = 'Wiadomość została wysłana pomyślnie! Odezwę się wkrótce.';
+                    formStatus.textContent = 'Sukces! Twoja wiadomość została wysłana.';
                     formStatus.style.color = '#27c93f';
                     formStatus.style.background = 'rgba(39, 201, 63, 0.1)';
                     formStatus.style.borderColor = 'rgba(39, 201, 63, 0.3)';
                 } else {
-                    response.json().then(data => {
+                    return response.json().then(data => {
                         if (Object.hasOwn(data, 'errors')) {
                             formStatus.textContent = data["errors"].map(error => error["message"]).join(", ");
                         } else {
-                            formStatus.textContent = 'Oops! Wystąpił problem przy wysyłaniu formularza.';
+                            formStatus.textContent = 'Wystąpił problem przy wysyłaniu. Spróbuj ponownie później.';
                         }
                         formStatus.classList.remove('hidden');
                         formStatus.style.color = '#ff5f56';
-                        formStatus.style.background = 'rgba(255, 95, 86, 0.1)';
-                        formStatus.style.borderColor = 'rgba(255, 95, 86, 0.3)';
                     });
                 }
-            }).catch(error => {
+            })
+.catch(error => {
                 formStatus.textContent = 'Wiadomość została wysłana pomyślnie! Odezwę się wkrótce. (tryb demo)';
                 formStatus.classList.remove('hidden');
                 formStatus.style.color = '#27c93f';
@@ -155,4 +154,63 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Add small delay to trigger CSS transition
     setTimeout(() => floatingContact.classList.add('visible'), 100);
+
+    // 6. Scroll Axis (Progress & ScrollSpy)
+    const scrollAxis = document.querySelector('.scroll-axis');
+    if (scrollAxis) {
+        const axisProgress = document.getElementById('axis-progress');
+        const axisItems = document.querySelectorAll('.axis-item');
+        const sections = Array.from(axisItems).map(item => document.getElementById(item.dataset.target));
+
+        // Update Progress Line
+        const updateAxisProgress = () => {
+            const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+            if (scrollTotal <= 0) return;
+            const scrollPercent = (window.scrollY / scrollTotal) * 100;
+            if (axisProgress) axisProgress.style.height = `${scrollPercent}%`;
+        };
+
+        window.addEventListener('scroll', updateAxisProgress);
+        updateAxisProgress(); // Initial call
+
+        // ScrollSpy Observer
+        const spyOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px', // Focus on top-ish section of screen
+            threshold: 0
+        };
+
+        const spyObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    axisItems.forEach(item => {
+                        item.classList.toggle('active', item.dataset.target === id);
+                    });
+                }
+            });
+        }, spyOptions);
+
+        sections.forEach(section => {
+            if (section) spyObserver.observe(section);
+        });
+    }
+
+    // 7. Cookie Banner Logic
+    const cookieBanner = document.getElementById('cookie-banner');
+    const cookieBtn = document.getElementById('cookie-accept');
+
+    if (cookieBanner && cookieBtn) {
+        // Check if already accepted
+        if (!localStorage.getItem('cookiesAccepted')) {
+            setTimeout(() => {
+                cookieBanner.classList.add('visible');
+            }, 2000);
+        }
+
+        cookieBtn.addEventListener('click', () => {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieBanner.classList.remove('visible');
+        });
+    }
 });

@@ -29,13 +29,12 @@
                         <a href="uslugi-ai.html" class="dropdown-item" data-i18n="nav_ai">Rozwiązania AI</a>
                         <a href="inwestycje.html" class="dropdown-item" data-i18n="nav_crypto">Inwestycje Crypto</a>
                         <a href="fotografia.html" class="dropdown-item" data-i18n="nav_foto">Fotografia</a>
-                        <a href="sport.html" class="dropdown-item" data-i18n="nav_sport">Zajęcia Sportowe</a>
                         <a href="smm.html" class="dropdown-item" data-i18n="nav_smm">SMM</a>
                         <a href="ofm.html" class="dropdown-item" data-i18n="nav_ofm">OnlyFans Management</a>
                         <a href="arkusze.html" class="dropdown-item" data-i18n="nav_sheets">Specjalistyczne Arkusze Google</a>
                     </div>
                 </li>
-                <li class="nav-push"><a href="index.html" class="nav-link" data-i18n="nav_back">Wróć do Głównej</a></li>
+                                <li class="nav-push"><a href="index.html" class="nav-link" data-i18n="nav_back">Wróć do Głównej</a></li>
                 <li><a href="portfolio.html" class="nav-link" data-i18n="nav_portfolio">Portfolio</a></li>
                 <li><a href="certyfikaty.html" class="nav-link" style="color:var(--text-primary); font-weight:600;" data-i18n="nav_certs">Certyfikaty</a></li>
                 <li><a href="cennik.html" class="nav-link" data-i18n="nav_pricing">Cennik</a></li>
@@ -180,31 +179,8 @@
                     <div class="cert-info">
                         <h3 data-i18n="txt_cert_motorboat_title">Patent Sternika Motorowodnego</h3>
                         <p data-i18n="txt_cert_motorboat_desc">Uprawnienia do prowadzenia jachtów motorowych.</p>
-                    </div>
-                </div>
-
-                <!-- 11: Skiing Instructor -->
-                <div class="certificate-card animate-on-scroll delay-1">
-                    <div class="cert-img-wrapper">
-                        <img src="images/cert-skiteacher.jpg" alt="Skiing Instructor License" class="portfolio-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="img-placeholder" style="background: linear-gradient(to top, #E0EAFC, #CFDEF3)" data-i18n="txt_cert_skiteacher_title">Instruktor Narciarstwa</div>
-                    </div>
-                    <div class="cert-info">
-                        <h3 data-i18n="txt_cert_skiteacher_title">Instruktor Narciarstwa Alpejskiego</h3>
-                        <p data-i18n="txt_cert_skiteacher_desc">Uprawnienia do nauczania jazdy na nartach zjazdowych.</p>
-                    </div>
-                </div>
-
-                <!-- 12: Swimming Coach -->
-                <div class="certificate-card animate-on-scroll delay-2">
-                    <div class="cert-img-wrapper">
-                        <img src="images/cert-swimcoach.jpg" alt="Swimming Coach Certificate" class="portfolio-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="img-placeholder" style="background: linear-gradient(45deg, #4facfe, #00f2fe)" data-i18n="txt_cert_swimcoach_title">Trener Pływania</div>
-                    </div>
-                    <div class="cert-info">
-                        <h3 data-i18n="txt_cert_swimcoach_title">Trener Pływania</h3>
-                        <p data-i18n="txt_cert_swimcoach_desc">Profesjonalne prowadzenie treningów pływackich.</p>
-                    </div>
+             
+            </div>
                 </div>
 
             </div>
@@ -216,8 +192,20 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <h3>AG.</h3>
-                <p data-i18n="footer_slogan">Usługi od A do Z, AI, IT, Fotografia, SMM i Sport.</p>
+                <p data-i18n="footer_slogan">Usługi od A do Z, AI, IT, Fotografia i SMM.</p>
             </div>
+
+            <div class="footer-payments">
+                <h4 data-i18n="footer_payments_title" style="margin-bottom: 0.5rem; font-size: 1rem;">Płatności</h4>
+                <a href="cennik.html#platnosci" class="payment-icons">
+                    <i class="fas fa-money-bill-wave" data-i18n-title="footer_cash" title="Gotówka"></i>
+                    <i class="fab fa-bitcoin" data-i18n-title="footer_btc" title="Bitcoin"></i>
+                    <i class="fas fa-university" data-i18n-title="footer_transfer" title="Przelew"></i>
+                    <i class="fab fa-paypal" data-i18n-title="footer_paypal" title="PayPal"></i>
+                </a>
+                <p class="footer-notice" data-i18n="footer_payments_note">Wszelkie usługi rozpoczynane są po otrzymaniu zaliczki lub pełnej kwoty.</p>
+            </div>
+
             <div class="footer-social">
                 <a href="https://www.linkedin.com/in/artur-gilowski-1b16893b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/ArturGilowski" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -226,8 +214,16 @@
         </div>
         <div class="footer-bottom">
             <p data-i18n="footer_copy">© 2026 Artur Gilowski. Wszelkie prawa zastrzeżone.</p>
+            <a href="polityka.html" data-i18n="footer_legal" style="color: var(--text-secondary); text-decoration: none; font-size: 0.8rem; margin-top: 0.5rem; display: block;">Regulamin i Polityka</a>
         </div>
     </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-container">
+            <p class="cookie-text" data-i18n="cookie_text">Ta strona używa plików cookies... <a href="polityka.html" data-i18n="nav_legal">Regulamin</a></p>
+            <button id="cookie-accept" class="cookie-btn" data-i18n="cookie_accept">Akceptuję</button>
+        </div>
+    </div>
 
     <a href="#" class="back-to-top" aria-label="Wróć na górę"><i class="fas fa-chevron-up"></i></a>
     <script src="translations.js"></script>
