@@ -1455,6 +1455,10 @@ h1, h2, h3, h4 {
     color: var(--text-primary);
 }
 
+.navbar-home-btn {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .contact-bar-container {
         gap: 1.5rem;
@@ -2009,11 +2013,16 @@ h1, h2, h3, h4 {
         overflow-wrap: break-word !important;
     }
 
-    /* Fluid Headers */
+    /* Fluid Headers & Pricing */
     .hero-title {
         font-size: clamp(2.2rem, 10vw, 3rem) !important;
         margin-bottom: 1.5rem !important;
         line-height: 1.1 !important;
+    }
+    
+    .pricing-price {
+        font-size: clamp(1.2rem, 8vw, 2rem) !important;
+        line-height: 1.2 !important;
     }
     
     .section-title {
@@ -2021,16 +2030,39 @@ h1, h2, h3, h4 {
         margin-bottom: 2rem !important;
     }
 
-    /* Grid & Flex Stacking */
+    /* Grid & Flex Stacking & Centering */
     .service-grid, 
     .portfolio-grid, 
     .bento-grid, 
     .features-grid,
-    .split-layout {
+    .split-layout,
+    .services-grid {
         grid-template-columns: 1fr !important;
         display: flex !important;
         flex-direction: column !important;
         gap: 2rem !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .service-card {
+        width: 100% !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 2rem 1.5rem !important;
+    }
+
+    .service-card h2, .service-card h3, .service-card p {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .card-list {
+        text-align: left !important; /* Keep bullet points left-aligned but container centered */
+        display: inline-block !important;
+        width: auto !important;
+        max-width: 100% !important;
     }
 
     /* Images & Visuals */
@@ -2056,10 +2088,31 @@ h1, h2, h3, h4 {
         overflow-x: auto !important;
     }
 
-    /* Home Icon */
+    /* Home Icon & Branding Port */
     .nav-home-icon {
         margin-right: 8px;
         font-size: 1.1rem;
         vertical-align: middle;
+    }
+
+    .navbar-home-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: var(--bg-surface-light);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        color: var(--text-primary);
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        margin-right: auto; /* Push hamburger to right */
+    }
+
+    /* Hide desktop version of home link on mobile if needed, 
+       but we want the separate button for better accessibility */
+    .nav-push {
+        display: none !important;
     }
 }
