@@ -2049,13 +2049,22 @@ h1, h2, h3, h4 {
         width: 100% !important;
         align-items: center !important;
         text-align: center !important;
-        padding: 2rem 1.5rem !important;
+        padding: 1.5rem 1rem !important; /* Slightly reduced padding */
     }
 
-    .service-card h2, .service-card h3, .service-card p {
+    .service-card h2, .service-card h3 {
+        font-size: clamp(1.4rem, 5.5vw, 1.7rem) !important; /* Shrink headers */
         text-align: center !important;
         margin-left: auto !important;
         margin-right: auto !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .service-card p {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        font-size: 0.95rem !important;
     }
 
     .card-list {
@@ -2107,7 +2116,7 @@ h1, h2, h3, h4 {
         color: var(--text-primary);
         font-size: 1.2rem;
         transition: all 0.3s ease;
-        margin-right: auto; /* Push hamburger to right */
+        margin-left: auto; /* Push Home button to right */
     }
 
     /* Hide desktop version of home link on mobile if needed, 
