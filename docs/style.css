@@ -2015,7 +2015,7 @@ h1, h2, h3, h4 {
 
     /* Fluid Headers & Pricing */
     .hero-title {
-        font-size: clamp(2.2rem, 10vw, 3rem) !important;
+        font-size: clamp(2rem, 8vw, 3rem) !important;
         margin-bottom: 1.5rem !important;
         line-height: 1.1 !important;
     }
@@ -2026,8 +2026,10 @@ h1, h2, h3, h4 {
     }
     
     .section-title {
-        font-size: 1.8rem !important;
-        margin-bottom: 2rem !important;
+        font-size: clamp(1.5rem, 6vw, 1.8rem) !important;
+        margin-bottom: 1.5rem !important;
+        text-align: center !important;
+        word-wrap: break-word !important;
     }
 
     /* Grid & Flex Stacking & Centering */
@@ -2053,25 +2055,28 @@ h1, h2, h3, h4 {
     }
 
     .service-card h2, .service-card h3 {
-        font-size: clamp(1.4rem, 5.5vw, 1.7rem) !important; /* Shrink headers */
-        text-align: center !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        font-size: clamp(1.2rem, 5vw, 1.4rem) !important; /* Smaller headers */
+        text-align: left !important; /* Closer to left side */
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
         margin-bottom: 1rem !important;
+        word-wrap: break-word !important;
     }
 
     .service-card p {
-        text-align: center !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        text-align: left !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
         font-size: 0.95rem !important;
+        width: 100% !important;
     }
 
     .card-list {
-        text-align: left !important; /* Keep bullet points left-aligned but container centered */
-        display: inline-block !important;
-        width: auto !important;
-        max-width: 100% !important;
+        text-align: left !important; 
+        display: block !important;
+        width: 100% !important;
+        padding-left: 1.5rem !important;
     }
 
     /* Images & Visuals */
@@ -2120,8 +2125,9 @@ h1, h2, h3, h4 {
     }
 
     /* Hide desktop version of home link on mobile if needed, 
-       but we want the separate button for better accessibility */
-    .nav-push {
+       but we want the separate button for better accessibility. 
+       We only target non-dropdown items to avoid hiding the 'Usługi' menu on the main page. */
+    .nav-menu > li.nav-push:not(.dropdown) {
         display: none !important;
     }
 }
