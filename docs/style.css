@@ -155,6 +155,43 @@ h1, h2, h3, h4 {
     border-bottom: 1px solid var(--border-color);
 }
 
+/* Custom Branding Logo */
+.nav-brand-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    z-index: 1001; /* Stay above nav menu if needed */
+}
+.nav-brand-img {
+    height: 38px; /* Minimally smaller than header height to fit cleanly */
+    max-height: 45px;
+    width: auto;
+    object-fit: contain;
+    transition: transform var(--transition-fast);
+}
+.nav-brand-logo:hover .nav-brand-img {
+    transform: scale(1.05);
+}
+
+/* Desktop: Logo on the left of 'Usługi' */
+@media (min-width: 769px) {
+    .nav-brand-logo {
+        margin-right: 1.5rem; /* Gap between logo and the nav menu */
+    }
+}
+
+/* Mobile: Logo exactly in the center of the navbar */
+@media (max-width: 768px) {
+    .nav-brand-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .nav-brand-img {
+        height: 35px; /* Slightly smaller for mobile header space */
+    }
+}
+
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
